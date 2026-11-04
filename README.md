@@ -39,9 +39,9 @@ Please see the Computer Requirements
 - [Learning Objectives](#learning-objectives)
 - [Time & Place](#time-and-place)
 - [Attendance](#attendance)
-- [Code Club](#code-club)
 - [Prerequisites](#prerequisites)
 - [Textbook](#textbook)
+- [Study Sessions](#study-sessions)
 - [Instructor](#instructor) 
 - [Grading](#grading)
 - [Assignments](#assignments)
@@ -75,9 +75,11 @@ By the end of the course, students will have the following skills:
 
 Lectures: __Tuesdays and Thursdays, 10:00 - 11:50 am in AZ E210__ starting Tuesday, Nov 10, 2026 and finishing Thursday, December 10, 2026. 
 
-## Echo 360 Recordings
+## Attendance
 
-I will try my best to post the recordings after the class on Canvas through Echo360. Due to a lengthy conversion process, videos will not be available until late afternoon or the following day. 
+Class attendance is not mandatory, but please let me know if you will be attending multiple classes remotely or making them up at a later time. I just want to make sure I know who is still engaged.
+
+I will try my best to post Echo360 recordings after the class on Canvas. Due to a lengthy conversion process, videos will not be available until late afternoon or the following day. 
 Please note - coming to class is the best way to learn. The in-class content will be very interactive with individualized help available in the classroom.
 
 ## Prerequisites
@@ -107,6 +109,8 @@ Cell and Molecular Biology Professor
 
 erinnish@colostate.edu or canvas e-mail
 
+Please e-mail me with any questions through regular e-mail or canvas e-mail. Course content-related questions that are e-mailed to instructors may be posted (anonymously) on Canvas Discussions for a faster response and to broadcast insight to the group. Personal or individual concerns will not be disclosed in that way.
+
 ## Grading
 
 Your grade for this course will be based on assignments, readings, lab notebook, and a final exam. The percentages are as follows:
@@ -133,6 +137,16 @@ __Assignments__ - There will be 5 assignments worth 7 pts each for a total of 35
 __Readings__ – Three will be 5 readings worth 3 pts each for a total of 15 possible points.
 
 __Quizzes__ – will be available on canvas.
+
+## Student Disability Accommodations
+
+SDC accommodations: I recognize that the Student Disability Center is behind in issuing accommodation letters. If you have a situation that requires SDC accommodations, please e-mail me directly and we can make arrangements. You can do this even before your official paperwork is processed in the SDC. This class has a lot of flexibility for all students with or without letters.
+
+## Other Accommodations
+
+This class is aimed at graduate students beyond their first year of coursework. As such, I realize students are engaged with research and exams. This class is designed to be sufficiently flexible to accommodate a reasonable number of absences and other time commitments. However, please be aware that you also have other options, such as auditing the class.
+
+To audit the class, you do 1) come to class as you like, 2) do the activities as you like, 3) participate as you like. Auditors do NOT enroll, receive credit, receive a final grade, turn in assignments, or receive feedback on assignments. Please let me know quickly if this is an attractive option for you, as the withdrawal date for this class is the first week.
 
 ## Privacy/Posting Policy
 
