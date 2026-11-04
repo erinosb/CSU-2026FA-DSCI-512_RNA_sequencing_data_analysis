@@ -22,12 +22,21 @@ Please see the [Computer Requirements](04_resources/Computer_requirements.md)
 
 | Date  | Module | Description | Reading | Assignments |
 |-------|------|-------------|---------|-------------|
-| Nov 10 | [Week1] |  |  |  |
-| Nov 12 | [Week1] |  |  |  |
+| Nov 10 | [Week1] | Course Intro </br> ALPINE </b>  Intro to RNA-seq  |  |  |
+| Nov 12 | [Week1] | RNA seq protocol </br> Installing software </br> Best practices |  |  |
 | Bonus Content |  |  |  |  |
-| Nov 17 | [Week2] |  |  |  |
-| Nov 19 | [Week2] |  |  |  |
+| Nov 17 | [Week2] | The project & pipeline </br> Installing Software 2 </br> Project initiation </br> SLURM |  |  |
+| Nov 19 | [Week2] | R </br> Data acquisition </br> pre-processing |  |  |
 | Bonus Content | [Week2] | | | |
+| Nov 24 | Fall Break | | | |
+| Dec 26 | Fall Break | | | |
+| Dec 1 | [Week3] | | | |
+| Dec 3  | [Week3] | | | |
+| Bonus Content | [Week3] | | | |
+| Dec 8 | [Week4] | | | |
+| Dec 10  | [Week4] | | | |
+| Bonus Content | [Week4] | | | |
+
 
 
 ------
