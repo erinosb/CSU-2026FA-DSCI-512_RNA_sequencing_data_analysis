@@ -14,7 +14,7 @@ Please read the [Syllabus](#syllabus)
 
 Please start the course through Modules
 
-Please see the Computer Requirements
+Please see the [Computer Requirements](04_resources/Computer_requirements.md)
 
 -----
 
@@ -87,7 +87,7 @@ Linux as a computational platform (DSCI 510) or familiarity with UNIX/Linux and 
 
 ## Requirements
 
-Please see the course REQUIREMENTS for information on the computer you should bring to class, requesting SUMMIT access, and required software.
+Please see the course [REQUIREMENTS](04_resources/Computer_requirements.md) for information on the computer you should bring to class, requesting ALPINE access, and any required software.
 
 ## Textbook
 
