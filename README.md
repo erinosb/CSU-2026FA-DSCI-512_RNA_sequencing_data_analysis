@@ -44,7 +44,6 @@ Please see the Computer Requirements
 - [Study Sessions](#study-sessions)
 - [Instructor](#instructor) 
 - [Grading](#grading)
-- [Assignments](#assignments)
 - [Student Disability Accommodations](#student-disability-accommodations)
 - [Other Accommodations](#other-accommodations)
 - [Privacy Policy](#privacyposting-policy)
