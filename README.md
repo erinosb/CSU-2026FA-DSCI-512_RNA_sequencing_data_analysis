@@ -12,7 +12,7 @@ Please see the [Syllabus](#schedule)
 
 Please read the [Syllabus](#syllabus)
 
-Please start the course through Modules
+Please start the course through [Modules](01_modules)
 
 Please see the [Computer Requirements](04_resources/Computer_requirements.md)
 
@@ -28,13 +28,13 @@ Please see the [Computer Requirements](04_resources/Computer_requirements.md)
 | Nov 17 | [Week2] | The project & pipeline </br> Installing Software 2 </br> Project initiation </br> SLURM |  |  |
 | Nov 19 | [Week2] | R </br> Data acquisition </br> pre-processing |  |  |
 | Bonus Content | [Week2] | | | |
-| Nov 24 | Fall Break | | | |
+| Nov 24 | Fall Break |  | | |
 | Dec 26 | Fall Break | | | |
-| Dec 1 | [Week3] | | | |
-| Dec 3  | [Week3] | | | |
+| Dec 1 | [Week3] | Automation 1 </br> Automation 2| | |
+| Dec 3  | [Week3] | Alignment </br> Building indices | | |
 | Bonus Content | [Week3] | | | |
-| Dec 8 | [Week4] | | | |
-| Dec 10  | [Week4] | | | |
+| Dec 8 | [Week4] | Tabulation </br> Differential Expression </br> DESeq2  | | |
+| Dec 10  | [Week4] | Genome Browsers </br> Project Clean Up | | |
 | Bonus Content | [Week4] | | | |
 
 
