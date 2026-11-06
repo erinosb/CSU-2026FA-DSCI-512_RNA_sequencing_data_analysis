@@ -8,7 +8,7 @@
 
 RNA-seq is a commonly used method for analyzing gene expression. This course will provide hands-on experience processing and analyzing high-throughput sequencing data, with an emphasis on RNA-seq.
 
-Please see the [Syllabus](#schedule)
+Please see the [Schedule](#schedule)
 
 Please read the [Syllabus](#syllabus)
 
@@ -36,7 +36,6 @@ Please see the [Computer Requirements](04_resources/Computer_requirements.md)
 | Dec 8 | [Week4](01_modules/Week4) | Tabulation </br> Differential Expression </br> DESeq2  | | |
 | Dec 10  | [Week4](01_modules/Week4)  | Genome Browsers </br> Project Clean Up | | |
 | Bonus Content | [Week4](01_modules/Week4)  | | | |
-
 
 
 ------
