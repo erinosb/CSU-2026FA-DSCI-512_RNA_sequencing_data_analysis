@@ -12,8 +12,8 @@ We will do most of our work in this class on the ALPINE supercomputer system. We
 
 If you took DSCI510: Linux as a Computational Platform, we introduced ALPINE here: 
 
-    * [Connecting to Remote Computers](https://github.com/erinosb/CSU-2026FA-DSCI-510_LINUX_as_a_computational_platform/blob/main/01_modules/Week4/4-5_Connecting_to_remote_computers.md)
-    * [Intro to ALPINE](https://github.com/erinosb/CSU-2026FA-DSCI-510_LINUX_as_a_computational_platform/blob/main/01_modules/Week4/4-6_Intro_to_Alpine.md)
+  * [Connecting to Remote Computers](https://github.com/erinosb/CSU-2026FA-DSCI-510_LINUX_as_a_computational_platform/blob/main/01_modules/Week4/4-5_Connecting_to_remote_computers.md)
+  * [Intro to ALPINE](https://github.com/erinosb/CSU-2026FA-DSCI-510_LINUX_as_a_computational_platform/blob/main/01_modules/Week4/4-6_Intro_to_Alpine.md)
 
 Today, we will start to learn about **High-Performance Computing** or HPC. HPC is a means of performing large computational tasks on supercomputers or compute clusters in a way that takes advantage of their ability to perform multiple tasks simultaneously.
 
