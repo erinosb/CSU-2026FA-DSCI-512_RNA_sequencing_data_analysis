@@ -19,3 +19,17 @@
   * [Data Acquisition](Week2/2-6_Data_Aquisition.md)
   * [Pre-Processing & QC](Week2/2-7_Pre-processing_and_QC.md)
 
+[Week3](Week3)
+
+  * Automation 1
+  * Automation 2
+  * Alignment
+  * Building Indices
+
+[Week4](Week4)
+
+  * Tabulation
+  * Differential Expression
+  * DESeq2
+  * Genome Browsers
+  * Cleaning up Projects
