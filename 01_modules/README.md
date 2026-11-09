@@ -5,4 +5,17 @@
   * [Course Introduction](Week1/1-1_Course_Introduction.md)
   * [ALPINE](Week1/1-2_ALPINE.md)
   * [Intro to RNA-seq](Week1/1-3_Intro_to_RNAseq.md)
+  * [The RNA-seq protocol](Week1/1-4_241105_RNAseqProtocol.pdf)
+  * [Installing Software 1](Week1/1-1_Course_Introduction.md)
+  * [RNA-seq Best Practices](Week1/1-1_Course_Introduction.md)
+
+[Week2](Week2)
+
+  * [The Project and the Pipeline](Week2/2-1_The_Project-The_Pipeline.md)
+  * [Installing Software 2](Week2/2-2_Installing_Software_2_SRAtoolkit.md)
+  * [Project Initiation](Week2/2-3_Project_Initiation.md)
+  * [Running Jobs with Slurm](Week2/2-4_Running_Jobs_with_SLURM.md)
+  * [Overview of R](Week2/2-5_Overview_of_R.md)
+  * [Data Acquisition](Week2/2-6_Data_Aquisition.md)
+  * [Pre-Processing & QC](Week2/2-7_Pre-processing_and_QC.md)
 
