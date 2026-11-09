@@ -1,3 +1,7 @@
+<p align="center">
+<img width="90%" alt="icons" src="../../05_images/headers_custom.png">
+</p>
+
 # Installing Software on ALPINE
 
 We will explore two ways to access software on ALPINE. The first is the [modules system](https://curc.readthedocs.io/en/latest/compute/modules.html). This will allow us to use software that the Research Computing team has already pre-installed and configured for us.
