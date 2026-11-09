@@ -31,6 +31,8 @@ Plan for today:
 
 Please take this [brief survey]( )
 
+-----
+
 <p align="center">
 <img width="80%" alt="icons" src="../../05_images/headers_LOs.jpg">
 </p>
