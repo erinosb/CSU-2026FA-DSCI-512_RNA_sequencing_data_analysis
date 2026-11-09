@@ -54,7 +54,7 @@ $ curc-quota
 Here is the “map” of ALPINE for reference.
 
 <p align="center">
-<img width="600" alt="alpine map" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_map.png">
+<img width="60%" alt="alpine map" src="../../05_images/alpineMap.png">
 </p>
 
 Now move to the compile node!
@@ -201,7 +201,7 @@ The output shows us the default environments that the personnel at CU Boulder ha
 We want to build a custom virtual environment for this class. To do so...
 ```
 $ hostname      # Ensure first that you're on a compile node.
-$ conda create -n 2025dsci python=3.11 # we need this version of python for deeptools and hisat2-inspect to work
+$ conda create -n 2026dsci python=3.11 # we need this version of python for deeptools and hisat2-inspect to work
  
 # You will be asked if you want to proceed. Type y
 # When your environment is created, check that it exists:
@@ -210,24 +210,24 @@ $ conda create -n 2025dsci python=3.11 # we need this version of python for deep
 $ conda env list
 ```
 
-You should now see a new virtual environment has appeared called `2025dsci`
+You should now see a new virtual environment has appeared called `2026dsci`
 
 To navigate into your new environment, do this
 ```
-$ conda activate 2025dsci
+$ conda activate 2026dsci
 $ conda env list # This shows you which environments are available and selected
 $ conda list  # This shows the software currently installed in your active environment
  
 # Another key you're on the right track... Your prompt should now start with your conda environment when active
-(2025dsci) [jesshill@colostate.edu@c3cpu-a2-u32-1 ~]$ 
+(2026dsci) [jesshill@colostate.edu@c3cpu-a2-u32-1 ~]$ 
 ```
 
-Yay! You should now have your environment `2025dsci` installed and activated. 
+Yay! You should now have your environment `2026dsci` installed and activated. 
 
 **!!! Exercise:** Let's install software! For this class, we will need the software packages: `fastp` `bwa` `hisat2` `bedtools` `samtools` `subread` `deeptools`
 
 ```
-# First double, triple check that you're in the 2025dsci environment
+# First double, triple check that you're in the 2026dsci environment
 $ conda env list #Is it starred?
 
 # To try and install all of the pieces of software at once do the following, however this doesnt always work and they often have to be installed individually. Try anyway. 
@@ -265,12 +265,12 @@ What will we need do we need to do routinely?
 Next time you log into ALPINE, You'll do the following tasks:
 1. Switch to the compile node
 2. Load the anaconda module
-3. Activate your 2025dsci environment
+3. Activate your 2026dsci environment
 
 ```
 $ acompile
 $ module load anaconda
-$ conda activate 2025dsci
+$ conda activate 2026dsci
 ```
 
 What if you want to load more software into this environment?
