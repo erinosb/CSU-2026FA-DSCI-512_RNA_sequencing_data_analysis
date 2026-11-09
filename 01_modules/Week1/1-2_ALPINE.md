@@ -241,4 +241,4 @@ We have two methods for installing software on ALPINE:
 - **Module system** - The Research Computing team has already installed some software for us. We just need to select it using the module system.
 - **conda** - Alternatively, we can install virtual enrivonments. These are spaces where multiple software can be downloaded and installed. Each time we log into ALPINE, we'll enter one of these environments. Different users can create different environments for different research projects and toggle between them.
 
-Continue on to [Intro to RNAseq](1_3_Intro_to_RNAseq.md)
+Continue on to [Intro to RNAseq](1-3_Intro_to_RNAseq.md)
