@@ -1,3 +1,8 @@
+<p align="center">
+<img width="90%" alt="icons" src="../../05_images/headers_Slide1A.png">
+</p>
+
+
 # Course Introduction
 
 Plan for today:
