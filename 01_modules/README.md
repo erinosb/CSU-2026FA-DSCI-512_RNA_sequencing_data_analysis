@@ -32,4 +32,4 @@
   * Differential Expression
   * DESeq2
   * Genome Browsers
-  * Cleaning up Projects
+  * Project Clean Up & Archiviing
