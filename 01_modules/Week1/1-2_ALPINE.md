@@ -81,13 +81,13 @@ ilovealpine,123456
 
 -----
 
-## Accessing Alpine
+## Accessing ALPINE
 
 To log onto ALPINE, you can use the terminal command `ssh` or you can use the browser portal called **onDemand**. See below for examples of both!
 
 ----
 
-## ssh into ALPINE
+## Accessing ALPINE using ssh
 
 
 
@@ -97,109 +97,145 @@ We are going to log into ALPINE using OnDemand, but I will keep some information
   <summary>Click to open this section</summary>
 
 You can log into ALPINE using `ssh` in your own terminal window like so:
-
+ 
 ```
 $ssh -l loki@colostate.edu login.rc.colorado.edu
 Password: godofmischief,push
 # Switch to your DUO app on your phone to approve
- 
-## OR ##
-$ssh loki@colostate.edu@login.rc.colorado.edu
-Password: godofmischief,push
-# Switch to your DUO app on your phone to approve
 ```
 
-**!!!** that's a lower case “L”
+>[!WARNING]
+> That's a lower case "L"**
 
-**!!!** no spaces around the `,`
+>[!TIP]
+> Replace your eID e-mail with loki@colostate.edu**
 
-**!!!** Replace loki@colostate.edu with your eID+e-mail
+>[!TIP]
+> You won't see anything pop up when you type your password
 
-**!!!** Replace your password with godofmischief
+>[!TIP]
+> If `,push` doesnt work, try `,phone` or the 6-digit code on your DUO app (refreshes every 20 seconds)**
 
-**!!!** You won't see anything pop up when you type your password
-
-**!!!** If `,push` doesn't work, try `,phone` or the 6-digit code on your DUO app (refreshes every 20 seconds)
-
-**!!!** If you are on a PC, they recommend using [PuTTY](https://www.putty.org/) or [Powershell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5&viewFallbackFrom=powershell-7.3). If you are on a MAC, just do this on your terminal.
 
 </details>
 
 ----
 
-## Use onDemand to access Alpine
+## Accessing ALPINE using OnDemand
 
 The team at CU Boulder who developed ALPINE have helped to create an alternative way to interact with the ALPINE Supercomputer, one that can happen in you internet browser like Chrome or Firefox. This method of accessing ALPINE is called OnDemand.
 
-- Navigate to [https://ondemand-rmacc.rc.colorado.edu](https://ondemand-rmacc.rc.colorado.edu) in a new tab or window
-- Right click on the above link and select **Open Link in New Window**
-- You will be asked to select an identity provider using a pull-down menu. Select on the pull-down menu (it may say **ORCID**). Start typing **Colorado State University**. Click on **Remember** and log in. It should look like this
+:hammer_and_wrench: **Group Exercise:** Let's practice accessing ALPINE using **OnDemand** together.
+
+- Navigate to [OnDemand](https://ondemand-rmacc.rc.colorado.edu/) in a new tab or window
+  - For me, I right click on the above link and select **Open Link in New Window**
+  - You will be asked to select an identity provider using a pull-down menu. Select on the pull-down menu (it may say **ORCID**). Start typing **Colorado State University**. Click on **Remember** and log in. It should look like this
 
 <p align="center">
-<img width="410" alt="login window" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/login_window.png">
+<img width="75%" alt="login" src="../../05_images/login_window.png">
 </p>
 
-Next steps: 
- - Log in using your CSU NET ID. You will receive a DUO PUSH on your phone. Accept it.
- - Go to **CLUSTERS** and select **>_Alpine Shell**
+Next steps:
+- Log into your CSU NET ID. You will receive a DUO PUSH on your phone. Accept it.
+- To access the LINUX command line on ALPINE, go to the **Clusters** menu. Select **>_Alpine Shell**
+- In another window, you can also access your files by going to the **Files** menu and selecting any available directories.
 
-<p align="center">
-<img width="410" alt="login window" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine.png">
-</p>
 
 ---
 
 ## The ALPINE System - Mapped out
 
+This is what ALPINE looks like mapped out:
+
 <p align="center">
-<img width="600" alt="alpine map" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_map.png">
+<img width="85%" alt="alpine map" src="../../05_images/alpineMap.png">
 </p>
 
 Just like your local computer, the ALPINE supercomputer is comprised of **computing hardware** (CPUs, GPUs, etc), memory, and **file storage space**.
 
-When we log into ALPINE through ssh or onDemand, we don't immediately have access to all the parts of the ALPINE hardware. Instead, we arrive at the **login node**. The name of the login node is written right prior to the prompt. Typing `hostname` also gives you the name of the login node.
+When we log into ALPINE through ssh or onDemand, we don't immediately have access to all the parts of the ALPINE hardware. Instead, we arrive at the login node. The name of the login node is written right prior to the prompt. Typing `hostname` also gives you the name of the login node.
 
-### The Nodes
 
-Detailed descriptions of [nodes](https://curc.readthedocs.io/en/latest/compute/node-types.html) can be found here. 
+
+:hammer_and_wrench: **Group Exercise:** type `hostname`
+
+---
+
+## The Nodes
+
+Detailed descriptions of [nodes](https://curc.readthedocs.io/en/latest/compute/node-types.html)
 
 Nodes are spaces on Alpine where you can do tasks and execute jobs. Each node type has a designated purpose. Part of your job will be to learn what is appropriate behavior on the different types of nodes. We will learn about the **login nodes**, the **compile nodes**, and the **compute nodes**.
 
-#### Login nodes
+### Login nodes
 
 When you first log into Alpine using `ssh`, you will be on a **login node**. Think of this as a lobby of a hotel. This is where you arrive first. You can do things like move and copy files, edit scripts, and execute small tasks. You should not run large jobs in the login node. You should not install software when you are here.
 
-#### Compile nodes
+### Compile nodes
 
-To move to a compile node, use the command `acompile`. When on a compile node, we can load existing software, install new software, run small jobs, and send big jobs to the compute nodes. You can see what software is available by typing 'module avail'.
+To move to a compile node, use the command `acompile`.
 
-#### Compute nodes
+:hammer_and_wrench: **Try it** Switch over to a compile node like so …
 
-**Compute notes** are the most numerous nodes on the system. There are roughly 256 regular compute nodes on the ALPINE system and 42 specialized ones. The compute nodes are where big jobs will run.
+```
+$ hostname
+$ acompile
+$ hostname
+```
 
-To run the jobs, we will need to get in line by requesting a job through a process called **batch submission**. Depending on how many users there are and what types of jobs have already been requested to run, we will be assigned to different compute nodes when they become available. The batch submission software used by ALPINE is called **slurm** and the main command we use is `sbatch`.
+When on a compile node, we can load existing software, install new software, run small jobs, and send big jobs to the compute nodes.
 
-Compute nodes are **multi-core processors**. This means we can run multiple jobs on one node. In the ALPINE architecture, we will mostly be using the **AMD milan** compute nodes (called `amilan`) which have 64 cores and can run up to 64 jobs simultaneously. Users can also request multiple nodes, too. **Cores** relates to how many CPUs (Central Processing Units) the computer has.
+Let's see what software is available to load:
+
+
+:hammer_and_wrench: **Try it** 
+
+```
+$ module avail
+```
+
+### Compute nodes
+
+**Compute notes** are the most numerous nodes on the system. There are roughly 420 regular compute nodes on the ALPINE system and a growing number of specialized ones. The compute nodes are where big jobs will run.
+
+To run jobs on compute notes, we will need to get in line by requesting a job through a process called **batch submission**. Depending on how many users there are and what types of jobs have already been requested to run, we will be assigned to different compute nodes when they become available. The batch submission software used by ALPINE is called **SLURM** and the main command we use is `sbatch`.
+
+Compute nodes are **multi-core processors**. This means we can run multiple jobs on one node. In the ALPINE architecture, we will mostly be using the **AMD milan** compute nodes (called `acpu`) which have can run up to 128 jobs simultaneously. Users can also request multiple nodes, too.
 
 Here is an outline of the different types of compute nodes available:
 
 <p align="center">
-<img width="600" alt="alpine nodes" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_nodes.png">
+<img width="50%" alt="alpine nodes" src="../../05_images/alpinePartitions.png">
 </p>
 
-### Alpine File Storage
+----
 
-Detailed information about the [File Storage on Alpine](https://curc.readthedocs.io/en/latest/compute/filesystems.html) can be found here. 
+## Jupyter Session
+
+Another way of using compute nodes is to open a Jupyter Notebook.
+
+Quick demonstration of a Jupyter Session
+
+ - For detailed information see the [CURC Jupyter Session Guide](https://curc.readthedocs.io/en/latest/open_ondemand/jupyter_session.html)
+
+
+:hammer_and_wrench: **Group Exercise:** Open a Jupyter Session
+
+----
+
+## Alpine File Storage
+
+Detailed information about the [File Storage on Alpine](https://curc.readthedocs.io/en/latest/compute/filesystems.html)
 
 Whereas the nodes are analogous to CPU and memory on your home laptop, the filesystem is analogous to your hard drive. This is where data will be stored. The ALPINE team has pre-organized several nice directories where each user can house their data. Each space has a designated purpose.
 
 Here are the different file storage spaces available:
 
 <p align="center">
-<img width="800" alt="storage locations" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/storageLocations.png">
+<img width="85%" alt="storage locations" src="../../05_images/alpineStorage.png">
 </p>
 
-### Software 
+## Software 
 
 We have two methods for installing software on ALPINE:
 - **Module system** - The Research Computing team has already installed some software for us. We just need to select it using the module system.
