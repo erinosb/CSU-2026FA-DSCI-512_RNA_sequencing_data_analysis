@@ -1,3 +1,7 @@
+<p align="center">
+<img width="90%" alt="icons" src="../../05_images/headers_rna.png">
+</p>
+
 # Introduction to RNA-seq 
 
 ## What is RNA-seq? 
