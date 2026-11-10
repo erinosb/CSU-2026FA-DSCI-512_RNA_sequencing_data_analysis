@@ -123,5 +123,8 @@ During the RNA capture and library prep step, you are allowing the tissue slice 
 <img width="400" alt="Visuim new slides" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/new_HD_slides.png">
 </p>
 
+> [!WARNING]
+> single-cell RNA-seq and Spatial RNA-seq are very expensive and challenging
+
 
 Continue on to [The RNA-seq Protocol](1-4_261109_RNAseqProtocol_classVers.pdf)
