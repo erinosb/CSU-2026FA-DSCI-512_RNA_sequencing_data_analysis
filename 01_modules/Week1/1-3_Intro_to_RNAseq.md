@@ -40,7 +40,7 @@ In general, there are common attributes to all...
 
 Perrou, C. 2011. [Molecular Stratification of Triple-Negative Breast Cancers](https://theoncologist.onlinelibrary.wiley.com/doi/full/10.1634/theoncologist.2011-S1-61) The Oncologist. 16 Suppl 1:61-70.
 
-- RNA-seq was performed on 677 breast tumors from patients.
+- Microarrays (a precursor to RNA-seq) was performed on 677 breast tumors from patients.
 - Breast tumors fall into 5 major sub-types.
 - Breast tumors that had been categorized as Triple-Negative actually fell in two sub-types: Claudin-low and Basal-like.
 - This discovery has led to new approaches to treating triple-negative breast cancer.
@@ -48,6 +48,12 @@ Perrou, C. 2011. [Molecular Stratification of Triple-Negative Breast Cancers](ht
   - Each patient sample is a column
   - Significantly changing genes are shown as rows
   - A computer program called a clustering algorithm organizes the order of rows and columns into groupings
+
+> "The landscape of breast cancer treatment has been revolutionized
+by the advent of molecular profiling, which has shifted
+the therapeutic paradigm from a one-size-fits-all approach to
+subtype-specific precision therapy." Shan et al., 2024
+
 
 <p align="center">
 <img width="600" alt="HeatMap ex1" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/HM_ex1.png">
