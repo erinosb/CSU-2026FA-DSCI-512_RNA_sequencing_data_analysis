@@ -13,7 +13,7 @@ Here are the software packages we'll need for this class and how we'll install e
 | Software Package  | What it does | How we'll install it |
 |-------------------|--------------|----------------------|
 | sra-toolkit | downloads genomics data from online databases	 | modules |
-| ncbi-datasets-cli | downloads genomes and .gtf files from online databases |
+| ncbi-datasets-cli | downloads genomes and .gtf files from online databases | conda |
 | fastp | quality control | conda |
 | bwa (bowtie) | alignment | conda |
 | hisat2 | alignment | conda |
@@ -21,6 +21,8 @@ Here are the software packages we'll need for this class and how we'll install e
 | samtools | genomics file conversion | conda |
 | subread | tabulation | conda |
 | deeptools | heatmaps & file conversion | conda |
+
+Modules 
 
 # Resources
 
