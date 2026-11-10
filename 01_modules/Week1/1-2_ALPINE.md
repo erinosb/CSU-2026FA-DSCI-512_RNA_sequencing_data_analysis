@@ -132,7 +132,7 @@ The team at CU Boulder who developed ALPINE have helped to create an alternative
   - You will be asked to select an identity provider using a pull-down menu. Select on the pull-down menu (it may say **ORCID**). Start typing **Colorado State University**. Click on **Remember** and log in. It should look like this
 
 <p align="center">
-<img width="75%" alt="login" src="../../05_images/login_window.png">
+<img width="75%" alt="login" src="../../05_images/ondemandLogin.png">
 </p>
 
 Next steps:
