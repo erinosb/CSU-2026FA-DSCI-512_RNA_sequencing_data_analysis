@@ -13,6 +13,7 @@ Here are the software packages we'll need for this class and how we'll install e
 | Software Package  | What it does | How we'll install it |
 |-------------------|--------------|----------------------|
 | sra-toolkit | downloads genomics data from online databases	 | modules |
+| ncbi-datasets-cli | downloads genomes and .gtf files from online databases |
 | fastp | quality control | conda |
 | bwa (bowtie) | alignment | conda |
 | hisat2 | alignment | conda |
@@ -21,7 +22,7 @@ Here are the software packages we'll need for this class and how we'll install e
 | subread | tabulation | conda |
 | deeptools | heatmaps & file conversion | conda |
 
-## Resources
+# Resources
 
 - [Loading Modules](https://curc.readthedocs.io/en/latest/compute/modules.html)
 - [Research Computing](https://curc.readthedocs.io/en/latest/software/python.html#basic-conda-commands-to-get-you-started)
@@ -37,7 +38,7 @@ Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/ope
 - Log into your CSU NET ID. You will receive a DUO PUSH on your phone. Accept it.
 - To access the LINUX command line on ALPINE, go to the Clusters menu. Select >_Alpine Shell
 
-## Loading Modules 
+# Loading Modules
 
 Follow along to load the sra-toolkit using the modules system.
 
@@ -62,6 +63,10 @@ Now move to the compile node!
 $ acompile
 $ hostname
 ```
+
+> [!NOTE]
+> You will get booted off the acompile node after one hour. Use --time=3:00:00 to specify you want 3 hours of time.
+
 
 From here, we can see what modules we have loaded already: 
 ```
