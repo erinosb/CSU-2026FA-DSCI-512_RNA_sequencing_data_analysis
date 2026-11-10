@@ -22,7 +22,23 @@ Here are the software packages we'll need for this class and how we'll install e
 | subread | tabulation | conda |
 | deeptools | heatmaps & file conversion | conda |
 
-Modules 
+**Modules** software has been pre-installed by the CURC personnel. Sometimes they need to do this because there are extra administration steps that need to happen only from the "back end". 
+
+**Conda environments** are collections or **enrivonrments** of software that you, the user, will install yourself.
+
+>[!NOTE]
+> If you try to install software and it doesn't work, please contact CURC personnel. They may need to install it as a module for it to work on the system.
+
+**How do I start using the software?**
+
+  * Unlike on your own personal laptop, software installation on an HPC system is a two step process
+  * **Initial install** - this happens first. For modules, the CURC personnel have already done it. For conda environments, we will do this together.
+    * Only have to do this once.
+  * **Loading or activating**. 
+    * Software that is installed using the "modules" feature must be **loaded** every session and done so individually.
+    * Conda environments will be **activated** every session, but will turn on all the software as a group.
+
+----
 
 # Resources
 
@@ -31,7 +47,9 @@ Modules
 - [Anaconda Resources](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 - [bioconda](https://bioconda.github.io/index.html)
 
-## Log into ALPINE through OnDemand
+----
+
+# Log into ALPINE through OnDemand
 
 For this course, we will access ALPINE through a web browser portal called OnDemand.
 
@@ -40,11 +58,14 @@ Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/ope
 - Log into your CSU NET ID. You will receive a DUO PUSH on your phone. Accept it.
 - To access the LINUX command line on ALPINE, go to the Clusters menu. Select >_Alpine Shell
 
+----
+
 # Loading Modules
 
-Follow along to load the sra-toolkit using the modules system.
+Here, I will show you how to load a module. 
 
-First, let's explore a little of where we are ...
+
+First, let's orient where we are ...
 ```
 $ whoami
 $ hostname
@@ -67,18 +88,57 @@ $ hostname
 ```
 
 > [!NOTE]
-> You will get booted off the acompile node after one hour. Use --time=3:00:00 to specify you want 3 hours of time.
+> You will get booted off the acompile node after one hour. Use $ acompile --time=3:00:00 to specify you want 3 hours of time.
 
+  * From here, we can see what modules we have loaded already: 
 
-From here, we can see what modules we have loaded already: 
 ```
 $ module list
 ```
+ 
+   * Looks like very little
 
 Next, lets see what modules are pre-installed by the staff and available to load: 
+
 ```
 $ module avail
 ```
+
+> [!NOTE]
+> All the modules are on acompile. If you try to look through the module avail list on the login node, you won't see anything.
+
+## Quick modules demo using cellranger
+
+Here are some common modules commands:
+
+```bash
+module avail                     # see what modules are pre-installed and available to load
+module load <name_of_module>     # load the module
+module unload <name_of_module>   # unload a module
+module list                      # see what modules are currentl loaded
+```
+
+Let's test this out with the module `cellranger`
+
+```bash
+
+$ cellranger    # command not found
+
+$ module list   # cellranger is not installed
+
+$ module avail  # find cellranger listed as installed as an option to load
+
+$ module load cellranger    # load cell ranger
+
+$ module list    # see it listed now!
+
+$ cellranger 
+
+$ cellranger --version
+
+$ module unload cellranger    # unload
+```
+
 
 The one we want is `sra-toolkit/3.0.0`. To load it, do the following: 
 
