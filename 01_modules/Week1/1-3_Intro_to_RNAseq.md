@@ -60,7 +60,7 @@ subtype-specific precision therapy." Shan et al., 2024
 
 
 <p align="center">
-<img width="40%" alt="HeatMap ex1" src="../../05_images/HM_ex1.png">
+<img width="55%" alt="HeatMap ex1" src="../../05_images/HM_ex1.png">
 </p>
 
 **2. Transcriptome profiling gene expression patterns through development**
