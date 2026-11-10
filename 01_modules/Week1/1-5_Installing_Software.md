@@ -291,4 +291,4 @@ Just make sure you are actively in the environment when you are installing new s
 - For a list of all availble conda software: [Anaconda](https://anaconda.org/anaconda/repo)
 
 
-Continue on to [RNAseq best practices](1_6_241107_RNAseqBestPractices.pdf)
+Continue on to [RNAseq best practices](1-6_241107_RNAseqBestPractices.pdf)
