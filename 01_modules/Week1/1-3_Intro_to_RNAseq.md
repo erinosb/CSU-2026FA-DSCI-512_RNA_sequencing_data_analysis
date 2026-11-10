@@ -21,7 +21,7 @@ In general, there are common attributes to all...
 5. Quantify fragments emanating from each gene
 
 <p align="center">
-<img width="410" alt="RNAseq workflow" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/191114_rnaseqintro_depict.png">
+<img width="40%" alt="RNAseq workflow" src="../../05_images/RNAseq_protocol.png">
 </p>
 
 ## What can we learn from RNA-seq?
@@ -60,7 +60,7 @@ subtype-specific precision therapy." Shan et al., 2024
 
 
 <p align="center">
-<img width="600" alt="HeatMap ex1" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/HM_ex1.png">
+<img width="40%" alt="HeatMap ex1" src="../../05_images/HM_ex1.png">
 </p>
 
 **2. Transcriptome profiling gene expression patterns through development**
@@ -72,7 +72,7 @@ Boeck, ME, et al. 2016. [The time-resolved transcriptome of C. elegans](https://
 - Waves of gene expression occur through development
 
 <p align="center">
-<img width="300" alt="HeatMap ex2" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/HM_ex2.png">
+<img width="25%" alt="HeatMap ex2" src="../../05_images/HM_ex2.png">
 </p>
 
 ## What else can we learn?
@@ -82,7 +82,7 @@ RNA-seq in its most basic form assesses the transcriptome of a sample. This is u
 Some examples of these protocols are shown in the chart below.
 
 <p align="center">
-<img width="600" alt="seq methods" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/seq_methods.jpg">
+<img width="80%" alt="seq methods" src="../../05_images/seq_methods.jpg">
 </p>
 
 Images adapted from Stark et al., 2019
@@ -96,7 +96,7 @@ The original protocols for RNA-seq required 4 micrograms of total RNA preparatio
 **DROP-seq** is one of the first and most successful examples of this type of technology. DROP-seq creates oil-water droplets of individual cells followed by parallel processing of thousands or tens of thousands of RNA-seq libraries [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-8674(15)00549-8). Click [here](https://mccarrolllab.org/dropseq/) to see droplet formation in action!
 
 <p align="center">
-<img width="500" alt="Drop-Seq" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/drop-seq.gif">
+<img width="60%" alt="Drop-Seq" src="../../05_images/drop-seq.gif">
 </p>
 
 Using DROP-seq, the individual cell compositions of complex tissues, organs, and tumors can be probed. This has led to advances in our understanding of how cells work together in multicellular systems. Cell types can be identified from the heterogenous pool of cells based on known cell identity markers. Further, different cell groupings may be referred to as cell states (as opposed to cell types) due to the fact that gene expression responses are confounded with cell identity in these studies. 
@@ -104,7 +104,7 @@ Using DROP-seq, the individual cell compositions of complex tissues, organs, and
 The first tissue studied by this method was the mouse retina. The transcriptomes of 44,808 mouse embryonic retinal cells were separated by DROP-seq into 39 transcriptionally distinct clusters and plotted using a new form of transcriptome diversity representation called a tSNE plot. The study re-capitulated known retinal cell types, identified novel cell types not previously associated with the retina, and discovered a wide range of transcriptome diversity among the amacrine cell group [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-8674(15)00549-8).
 
 <p align="center">
-<img width="700" alt="Drop-Seq example" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/drop-seq_ex.jpg">
+<img width="75%" alt="Drop-Seq example" src="../../05_images/drop-seq_ex.jpg">
 </p>
 
 Figure from [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-8674(15)00549-8): A.) Retinal tissue was dissociated and assessed by DROP-seq. B.) A tSNE plot of the resulting transcriptome profiles.
@@ -120,7 +120,7 @@ New technologies like the [Visium Spatial Transcriptomics from 10x genomics](htt
 During the RNA capture and library prep step, you are allowing the tissue slice to lay on slides with 2 specific capture areas that are each coated with a continuous lawn of 2 micron x 2 micron barcoded squares. This allows captured RNA to bind and provide the single cell-scale resolution. See this [video](https://www.10xgenomics.com/blog/more-than-a-tissue-slide-inside-visium-spatial-technology) on how it works.
 
 <p align="center">
-<img width="400" alt="Visuim new slides" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/new_HD_slides.png">
+<img width="30%" alt="Visuim new slides" src="../../05_images/new_HD_slides.png">
 </p>
 
 > [!WARNING]
