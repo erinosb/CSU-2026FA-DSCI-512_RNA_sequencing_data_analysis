@@ -125,4 +125,4 @@ In the end, you are left with a cDNA library sequence that is barcoded like so (
 <img width="400" alt="barcoded library sequence" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/library_barcodes.png">
 </p>
 
-Continue on to [The RNA-seq Protocol](1-4_241105_RNAseqProtocol.pdf)
+Continue on to [The RNA-seq Protocol](1-4_261109_RNAseqProtocol_classVers.pdf)
