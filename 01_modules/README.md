@@ -5,7 +5,7 @@
   * [Course Introduction](Week1/1-1_Course_Introduction.md)
   * [ALPINE](Week1/1-2_ALPINE.md)
   * [Intro to RNA-seq](Week1/1-3_Intro_to_RNAseq.md)
-  * [The RNA-seq protocol](Week1/1-4_241105_RNAseqProtocol.pdf)
+  * [The RNA-seq protocol](Week1/1-4_261109_RNAseqProtocol_classVers.pdf)
   * [Installing Software 1](Week1/1-5_Installing_Software.md)
   * [RNA-seq Best Practices](Week1/1-6_241107_RNAseqBestPractices.pdf)
 
