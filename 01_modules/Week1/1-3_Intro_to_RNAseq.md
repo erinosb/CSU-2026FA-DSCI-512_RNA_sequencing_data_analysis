@@ -72,7 +72,7 @@ Boeck, ME, et al. 2016. [The time-resolved transcriptome of C. elegans](https://
 - Waves of gene expression occur through development
 
 <p align="center">
-<img width="25%" alt="HeatMap ex2" src="../../05_images/HM_ex2.png">
+<img width="20%" alt="HeatMap ex2" src="../../05_images/HM_ex2.png">
 </p>
 
 ## What else can we learn?
@@ -120,7 +120,7 @@ New technologies like the [Visium Spatial Transcriptomics from 10x genomics](htt
 During the RNA capture and library prep step, you are allowing the tissue slice to lay on slides with 2 specific capture areas that are each coated with a continuous lawn of 2 micron x 2 micron barcoded squares. This allows captured RNA to bind and provide the single cell-scale resolution. See this [video](https://www.10xgenomics.com/blog/more-than-a-tissue-slide-inside-visium-spatial-technology) on how it works.
 
 <p align="center">
-<img width="30%" alt="Visuim new slides" src="../../05_images/new_HD_slides.png">
+<img width="50%" alt="Visuim new slides" src="../../05_images/new_HD_slides.png">
 </p>
 
 > [!WARNING]
