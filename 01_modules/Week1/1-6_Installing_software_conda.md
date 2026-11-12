@@ -206,8 +206,11 @@ conda env list
 # Install the conda-forge tools:
 conda install -c conda-forge ncbi-datasets-cli
 
+# This might be helpful (first time use)
+conda config --add channels bioconda
+
 # Install the bioconda tools:
-conda install -c bioconda fastp bwa hisat2 bedtools samtools subread deeptools
+conda install -c bioconda fastp bedtools samtools subread deeptools bwa hisat2 
 
 # You may need to press y to install dependencies. Type "y"
 # Some things will say they are failing. That's ok. 
