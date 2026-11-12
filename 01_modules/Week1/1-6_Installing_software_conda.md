@@ -267,3 +267,5 @@ conda install -c bioconda <SOFTWARE1> <SOFTWARE2>
 
 Just make sure you are actively in the environment when you are installing new stuff!
 
+Continue on to [Installing Software 2 - conda](1-7_261112_RNAseqBestPractices.pdf)
+
