@@ -9,7 +9,7 @@
 
 # Learning objectives for today
 
-  * Gain more practice on ALPINE to familiarize yourself with basic navigation, notes, and storage spaces
+  * Gain more practice on ALPINE to familiarize yourself with basic navigation, nodes, and storage spaces
   * Become knowledgeable of the two ways to load software on ALPINE 1) Modules and 2) conda
     * Modules are installed by CURC staff
     * Modules must be loaded by the user each session
