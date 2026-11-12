@@ -49,7 +49,7 @@ Here are the software packages we'll need for this class and how we'll install e
 
 ----
 
-# Log into ALPINE through OnDemand
+## Log into ALPINE through OnDemand
 
 For this course, we will access ALPINE through a web browser portal called OnDemand.
 
@@ -133,7 +133,7 @@ module unload cellranger    # unload
 
 ----
 
-# Configuring The SRA-Toolkit Module - First Time Usage
+## Configuring The SRA-Toolkit Module - First Time Usage
 
 **SRA Toolkit** is software that will allow us to download deposited RNA-seq data from repositories like NCBI GEO and the SRA (Short Read Archive) Database. 
 
