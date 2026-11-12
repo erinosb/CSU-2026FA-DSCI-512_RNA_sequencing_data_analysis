@@ -6,6 +6,8 @@
 
   * Announcement - Friday 9 am - 10 am, AZ E210 - Study Group
   * Wednesdays - ALPINE is typically down
+  * Homework is due Tue Nov 17th 
+  * Quiz Tue Nov 17th
 
 # Learning objectives for today
 
