@@ -34,7 +34,7 @@ Here are the software packages we'll need for this class and how we'll install e
   * Unlike on your own personal laptop, software installation on an HPC system is a two step process
   * **Initial install** - this happens first. For modules, the CURC personnel have already done it. For conda environments, we will do this together.
     * Only have to do this once.
-  * **Loading or activating**. 
+  * **Loading or activating**
     * Software that is installed using the "modules" feature must be **loaded** every session and done so individually.
     * Conda environments will be **activated** every session, but will turn on all the software as a group.
 
@@ -122,36 +122,50 @@ Let's test this out with the module `cellranger`
 
 ```bash
 
-$ cellranger    # command not found
-
-$ module list   # cellranger is not installed
-
-$ module avail  # find cellranger listed as installed as an option to load
-
-$ module load cellranger    # load cell ranger
-
-$ module list    # see it listed now!
-
-$ cellranger 
-
-$ cellranger --version
-
-$ module unload cellranger    # unload
+cellranger    # command not found
+module list   # cellranger is not installed
+module avail  # find cellranger listed as installed as an option to load
+module load cellranger    # load cell ranger
+module list    # see it listed now!
+cellranger 
+cellranger --version
+module unload cellranger    # unload
 ```
 
+----
+
+# Configuring The SRA-Toolkit Module - First Time Usage
+
+**SRA Toolkit** is software that will automatically down load deposited RNA-seq data from repositories like NCBI GEO and the SRA (Short Read Archive Database). In other words, this is how we will download previously published RNA-seq datasets.
+
+Unlike cellranger, SRA Toolkit needs a one-time configuration step before we can use it. 
+
+Basically, we need to tell the software which directory we want to use as a temporary location for downloading big or fragmented pieces of sequence data. 
+
+First, to get started, let's **load** the SRA Toolkit module:
+
+```bash
+module avail # Look for sra-toolkit
+```
 
 The one we want is `sra-toolkit/3.0.0`. To load it, do the following: 
 
+```bash
+module load sra-toolkit
 ```
-$ module load sra-toolkit
-```
 
-**!!! Quick Tip:** Don't forget to use TAB autocomplete. 
+> [!TIP]
+> Don't forget to use TAB autocomplete. 
 
-Now, when you load sra-toolkit for the first time you should see a message: `The first time you use SRA Toolkit you will need to configure it by running "vdb-config -i".
-Please see CURC documentation for more information about configuring and running SRA Toolkit.`
+Now, when you load sra-toolkit for the first time you should see a message: 
 
-We will do this later, skip for now!
+<p align="center">
+<img width="80%" alt="icons" src="../../05_images/sra_warning.png">
+</p>
+
+
+https://curc.readthedocs.io/en/latest/software/sratoolkit.html
+
 
 Let's test if it is installed properly. One of the commands in the sra-toolkit package is `fasterq-dump`
 ```
