@@ -136,7 +136,7 @@ module unload cellranger    # unload
 
 # Configuring The SRA-Toolkit Module - First Time Usage
 
-**SRA Toolkit** is software that will automatically down load deposited RNA-seq data from repositories like NCBI GEO and the SRA (Short Read Archive Database). In other words, this is how we will download previously published RNA-seq datasets.
+**SRA Toolkit** is software that will allow us to download deposited RNA-seq data from repositories like NCBI GEO and the SRA (Short Read Archive) Database. 
 
 Unlike cellranger, SRA Toolkit needs a one-time configuration step before we can use it. 
 
@@ -157,32 +157,66 @@ module load sra-toolkit
 > [!TIP]
 > Don't forget to use TAB autocomplete. 
 
-Now, when you load sra-toolkit for the first time you should see a message: 
+Every time you load SRA Toolkit, CURC will warn you that it needs to be properly configured prior to use: 
 
 <p align="center">
 <img width="80%" alt="icons" src="../../05_images/sra_warning.png">
 </p>
 
-
-https://curc.readthedocs.io/en/latest/software/sratoolkit.html
-
-
 Let's test if it is installed properly. One of the commands in the sra-toolkit package is `fasterq-dump`
 ```
-$ fasterq-dump
+fasterq-dump
 ```
 
-If you received `command not found` sra-toolkit is NOT installed
+If you received `command not found` SRA Toolkit is NOT installed
 
-If you received a printout of instructions, sra-toolkit IS installed
+If you received a printout of instructions, SRA Toolkit IS installed
 
-**!!! Quick Tip:** for working with modules
+Looking back at the warning message that was printed out, it instructs us to set up this module by reading the instructions here:
+
+[CURC Instructions SRA-Toolkit](https://curc.readthedocs.io/en/latest/software/sratoolkit.html)
+
+> [!NOTE]
+> At this point, we will switch over to the CURC instruction link above and follow their instructions
+
+Briefly, this will involve the following steps:
+
+  * creating a sra directory where we can store temp and cache files
+  * open up the vdg config applet
+  * specifying the pathway to our sra directory
+  * saving and closing
+
+Now, let's check whether SRA Toolkit works now:
 
 ```
+fasterq-dump
+```
+
+Did it work? Is it installed?
+
+# Summary of Modules
+
+To summarize:
+
+  * To use pre-installed modules, just do the following each time:
+    * Move to acompile
+    * `module avail`
+    * `module load <your module name>`
+  * Most modules just work right away. Some need to be configured
+
+
+
+> [!TIP] 
+> Here are some useful commands for modules
+
+```
+$ module avail                # which modules are available?
+$ module list                 # which modules have you already loaded?
+$ module load <module>        # load a module
 $ module spider <module>      # If you cannot load a module because of dependencies, you can use the module spider to find what dependencies you need to load the module.
 $ module spider <module>      # Searches for a particular software
 $ module spider python        # note there are multiple versions you could choose
-$ module unload <modulename>  # uninstall a module
+$ module unload <module>      # uninstall a module
 $ module purge                # uninstall all modules
 ```
 
