@@ -206,9 +206,6 @@ conda env list
 # Install the conda-forge tools:
 conda install -c conda-forge ncbi-datasets-cli
 
-# Optional - conda may ask you to activate itself
-conda update -n base -c conda-forge conda
-
 # Install the bioconda tools:
 conda install -c bioconda fastp bwa hisat2 bedtools samtools subread deeptools
 
