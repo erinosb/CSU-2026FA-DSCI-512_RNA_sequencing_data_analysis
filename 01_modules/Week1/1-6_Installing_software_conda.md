@@ -3,9 +3,73 @@
 </p>
 
 
-## Initiate a virtual conda environment 
+# Welcome to conda
 
 Another way of installing software is through a **conda virtual environment**. Virtual environments can contain their own combinations of installed software of different versions. In this way, you can switch between different environments for different projects. This is one of the many ways the community is trying to make research more **reproducible**.
+
+Today, we will walk you through how to install software on SUMMIT using **conda**. What is conda?
+
+<p align="center">
+<img width="60%" alt="conda" src="../../05_images/conda.png">
+</p>
+
+#### conda
+
+- conda is an open-source **package** management system
+- conda maintains a repository of open-source software code called Anaconda
+  - We will use the computational biology specific version called [bioconda](https://anaconda.org/bioconda/repo)
+- conda assists in downloading, compiling, and installing software
+- when a piece of software is downloaded, all dependent packages will also be obtained
+- conda helps users create different **environments** where software collections can be collected and curated.
+
+**packages** - small units of software
+
+**environment** - a virtual space where a user can contain a collection of installed software. Users can have environments associated with different research projects.
+
+#### what is up with the name?
+
+- python, anaconda, sense a theme? hint - there is also a boa
+
+#### A little bit about the scope of this project
+
+<p align="center">
+<img width="410" alt="updates" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/update.png">
+</p>
+
+### Configuring conda with `.condarc`
+
+Today's lesson is adapted from: [https://curc.readthedocs.io/en/latest/software/python.html](https://curc.readthedocs.io/en/latest/software/python.html) to specifically apply to command-line bioinformatics software. See the original doc for more information and ways to use it.
+
+Our first step before we can use conda is to configure our startup files to customize how conda will perform.
+
+Like `.bash_profile`, `.bashrc` and `.zshrc`, other programs use “.rc” files to start up files that spell out configuration settings. These settings are not BASH scripts, though, just lists of values.
+
+For conda, the startup file is called `.condarc` and it is located in your `$HOME` directory.
+
+**!!! Exercise** - let's work together to customize our conda settings.
+
+Navigate to your `$HOME` directory and open `.condarc`
+
+```
+$ cd
+$ open .condarc
+```
+
+Type in the following at the end of the file, making sure to replace `your-eID@colostate.edu` with your actual eID-e-mail address.
+
+```
+pkgs_dirs:
+  - /projects/<your-eID@colostate.edu>/.conda_pkgs
+envs_dirs:
+  - /projects/<your-eID@colostate.edu>/software/anaconda/envs
+```
+
+Save and exit the file. You won’t need to perform this step again – it’s permanent unless you modify `.condarc` later.
+
+The `.condarc` file provides a variety of settings that can be detailed to speed up your workflows. For more information on `.condarc`, check out the [Anaconda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html). 
+
+
+
 
 **!!! Exercise:** We first need to set up a configuration file in our home directory. We will start a new configuration file specifically for the conda software. This will tell conda where to save and install programs.
 
