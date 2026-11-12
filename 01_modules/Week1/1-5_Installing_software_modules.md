@@ -24,7 +24,7 @@ Here are the software packages we'll need for this class and how we'll install e
 
 **Modules** software has been pre-installed by the CURC personnel. Sometimes they need to do this because there are extra administration steps that need to happen only from the "back end". 
 
-**Conda environments** are collections or **enrivonrments** of software that you, the user, will install yourself.
+**Conda environments** are collections or **environments** of software that you, the user, will install yourself.
 
 >[!NOTE]
 > If you try to install software and it doesn't work, please contact CURC personnel. They may need to install it as a module for it to work on the system.
@@ -44,8 +44,6 @@ Here are the software packages we'll need for this class and how we'll install e
 
 - [Loading Modules](https://curc.readthedocs.io/en/latest/compute/modules.html)
 - [Research Computing](https://curc.readthedocs.io/en/latest/software/python.html#basic-conda-commands-to-get-you-started)
-- [Anaconda Resources](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-- [bioconda](https://bioconda.github.io/index.html)
 
 ----
 
@@ -65,11 +63,12 @@ Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/ope
 Here, I will show you how to load a module. 
 
 First, let's orient where we are ...
-```
-$ whoami
-$ hostname
-$ pwd
-$ curc-quota 
+
+```bash
+whoami
+hostname
+pwd
+curc-quota 
 ```
 
 `curc-quota` should give you your disk usage. 
@@ -81,9 +80,10 @@ Here is the “map” of ALPINE for reference.
 </p>
 
 Now move to the compile node!
-```
-$ acompile
-$ hostname
+
+```bash
+acompile
+hostname
 ```
 
 > [!NOTE]
@@ -91,7 +91,7 @@ $ hostname
 
   * From here, we can see what modules we have loaded already: 
 
-```
+```bash
 $ module list
 ```
  
@@ -99,8 +99,8 @@ $ module list
 
 Next, lets see what modules are pre-installed by the staff and available to load: 
 
-```
-$ module avail
+```bash
+module avail
 ```
 
 > [!NOTE]
@@ -120,7 +120,6 @@ module list                      # see what modules are currentl loaded
 Let's test this out with the module `cellranger`
 
 ```bash
-
 cellranger    # command not found
 module list   # cellranger is not installed
 module avail  # find cellranger listed as installed as an option to load
@@ -163,7 +162,8 @@ Every time you load SRA Toolkit, CURC will warn you that it needs to be properly
 </p>
 
 Let's test if it is installed properly. One of the commands in the sra-toolkit package is `fasterq-dump`
-```
+
+```bash
 fasterq-dump
 ```
 
@@ -187,11 +187,15 @@ Briefly, this will involve the following steps:
 
 Now, let's check whether SRA Toolkit works now:
 
-```
+```bash
 fasterq-dump
 ```
 
+If it works, you should see a usage page with instructions.
+
 Did it work? Is it installed?
+
+-----
 
 # Summary of Modules
 
@@ -203,20 +207,18 @@ To summarize:
     * `module load <your module name>`
   * Most modules just work right away. Some need to be configured
 
-
-
 > [!TIP] 
 > Here are some useful commands for modules
 
-```
-$ module avail                # which modules are available?
-$ module list                 # which modules have you already loaded?
-$ module load <module>        # load a module
-$ module spider <module>      # If you cannot load a module because of dependencies, you can use the module spider to find what dependencies you need to load the module.
-$ module spider <module>      # Searches for a particular software
-$ module spider python        # note there are multiple versions you could choose
-$ module unload <module>      # uninstall a module
-$ module purge                # uninstall all modules
+```bash
+module avail                # which modules are available?
+module list                 # which modules have you already loaded?
+module load <module>        # load a module
+module spider <module>      # If you cannot load a module because of dependencies, you can use the module spider to find what dependencies you need to load the module.
+module spider <module>      # Searches for a particular software
+module spider python        # note there are multiple versions you could choose
+module unload <module>      # uninstall a module
+module purge                # uninstall all modules
 ```
 
 Continue on to [Installing Software 2 - conda](1-6_Installing_software_conda.md)
