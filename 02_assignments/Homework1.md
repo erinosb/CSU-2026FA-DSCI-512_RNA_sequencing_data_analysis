@@ -1,6 +1,6 @@
 # Assignment #1
 
-- Due Thursday, December 4, 2025, 11:59 pm.
+- Due November 17th, 2026, 10:00 am
 - Turn in on canvas.
 
 ## E-mail an RNA-seq experiment proposal
