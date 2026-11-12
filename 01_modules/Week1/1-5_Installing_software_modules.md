@@ -11,10 +11,16 @@
 
   * Gain more practice on ALPINE to familiarize yourself with basic navigation, notes, and storage spaces
   * Become knowledgeable of the two ways to load software on ALPINE 1) Modules and 2) conda
-  * Learn 
+    * Modules are installed by CURC staff
+    * Modules must be loaded by the user each session
+    * Conda environments are developed by the user (typically once)
+    * Conda environments must be activated each session
+  * Learn terminology for RNA-seq experiments: sample, replicate, biological replicate, technical replicate, conditions
+  * Learn best practices for designing RNA-seq experiments around a biological question
+  * Learn best practices for interpreting RNA-seq experiments keeping in mind the limitations of each study
+  * Understand that the experiment you do AFTER RNA-seq are very important! Test your ideas and results!
 
 ------
-
 
 # Installing Software on ALPINE
 
@@ -69,6 +75,13 @@ Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/ope
 - Open https://ondemand-rmacc.rc.colorado.edu in a new tab or window
 - Log into your CSU NET ID. You will receive a DUO PUSH on your phone. Accept it.
 - To access the LINUX command line on ALPINE, go to the Clusters menu. Select >_Alpine Shell
+
+Next, move to the acompile node where we will install software:
+
+```bash
+acompile --time=03:00:00
+```
+
 
 ----
 
@@ -213,7 +226,7 @@ Did it work? Is it installed?
 
 # Summary of Modules
 
-To summarize:
+**To summarize:**
 
   * To use pre-installed modules, just do the following each time:
     * Move to acompile

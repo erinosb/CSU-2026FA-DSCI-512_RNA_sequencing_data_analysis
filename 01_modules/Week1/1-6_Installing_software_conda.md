@@ -239,13 +239,13 @@ Yay! You have successfully created a conda environment with all the software you
 
 # Summary of Conda 
 
-To summarize: 
+**To summarize:**
 
   * We started a new conda environment
   * We installed software in it
   * Next time, we will just load conda, activate our environment, and we can use any of this software!
 
-What will we need do we need to do routinely?
+**What will we need do we need to do routinely?**
 
 1. Switch to the compile node 
 2. Load the anaconda module 
@@ -257,7 +257,7 @@ module load anaconda
 conda activate 2026dsci
 ```
 
-What if you want to load more software into this environment?
+**What if you want to load more software into this environment?**
 
 ```bash
 conda install -c <SOFTWARE1> <SOFTWARE2>
