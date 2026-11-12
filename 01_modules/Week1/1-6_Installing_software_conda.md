@@ -66,9 +66,11 @@ I know this is going to feel a little circular, but **conda** is already install
 
 :hammer_and_wrench: **GROUP EXERCISE** - follow along on your own computer
 
-```bash
-# First, make sure you're on an acompile node
+First, go ahead and open a ALPINE Shell using **CLUSTERS** -> **>_ALPINE SHELL ACCESS**
 
+```bash
+# Next, make sure you're on an acompile node. If not, acompile
+hostname
 module avail
 module load anaconda
 ```
@@ -175,8 +177,6 @@ conda list  # This shows the software currently installed in your active environ
 # Another key you're on the right track... Your prompt should now start with your conda environment when active
 (2026dsci) [erinnish@colostate.edu@c3cpu-a2-u32-1 ~]$ 
 
-# Optional - conda may ask you to activate itself
-conda update -n base -c conda-forge conda
 ```
 
 Yay! You should now have your environment `2026dsci` installed and activated and updated
@@ -203,12 +203,15 @@ Yay! You should now have your environment `2026dsci` installed and activated and
 # First double, triple check that you're in the 2026dsci environment
 conda env list
 
+# Install the conda-forge tools:
+conda install -c conda-forge ncbi-datasets-cli
+
+# Optional - conda may ask you to activate itself
+conda update -n base -c conda-forge conda
+
 # Install the bioconda tools:
 conda install -c bioconda fastp bwa hisat2 bedtools samtools subread deeptools
 
-# Install the conda-forge tools:
-conda install -c conda-forge ncbi-datasets-cli
- 
 # You may need to press y to install dependencies. Type "y"
 # Some things will say they are failing. That's ok. 
 # This whole install took ~20 minutes for me
