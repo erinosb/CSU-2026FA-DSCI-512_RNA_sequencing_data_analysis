@@ -160,8 +160,8 @@ conda create -n 2026dsci
 
 # You will be asked if you want to proceed. Type y
 # When your environment is created, check that it exists:
- 
 conda env list
+
 ```
 
 You should now see a new virtual environment has appeared called `2026dsci`
@@ -180,6 +180,10 @@ conda update -n base -c conda-forge conda
 ```
 
 Yay! You should now have your environment `2026dsci` installed and activated and updated
+
+----
+
+# Install software in your conda environment
 
 :hammer_and_wrench: **GROUP EXERCISE**. Let's install software! For this class, we will need the software packages: 
 
@@ -211,11 +215,11 @@ conda install -c conda-forge ncbi-datasets-cli
 ```
 
 > [!WARNING]
-> If you see a KILLED message and it looks like it stopped installing, try installing the software one at a time. I usually run into trouble when I try to install mulitiple packages at once! 
+> If you see a KILLED message and it looks like it stopped installing, try installing the software one at a time.
 
 Now, let's test and see whether the software you requested was installed successfully. If they weren't installed successfully, you will get an error message
 
-```
+```bash
 fastp
 bwa
 hisat2       #Note: hisat2 will say Error at the bottom because you didn't give it a sequence file. That's ok.
@@ -232,26 +236,27 @@ Yay! You have successfully created a conda environment with all the software you
 
 # Summary of Conda 
 
-To summarize, we configured our system to install our software in projects. We only need to do that once.
+To summarize: 
 
-We also created an environment to use in this class. Again, this is something we just do once.
+  * We started a new conda environment
+  * We installed software in it
+  * Next time, we will just load conda, activate our environment, and we can use any of this software!
 
 What will we need do we need to do routinely?
 
-Next time you log into ALPINE, You'll do the following tasks:
-1. Switch to the compile node (`acompile`)
-2. Load the anaconda module (`module load anaconda`)
-3. Activate your 2026dsci environment (`conda activate 2026dsci`)
+1. Switch to the compile node 
+2. Load the anaconda module 
+3. Activate your 2026dsci environment
 
-```
-$ acompile
-$ module load anaconda
-$ conda activate 2026dsci
+```bash
+acompile
+module load anaconda
+conda activate 2026dsci
 ```
 
 What if you want to load more software into this environment?
 
-```
+```bash
 conda install -c <SOFTWARE1> <SOFTWARE2>
 conda install -c conda-forge <SOFTWARE1> <SOFTWARE2>
 conda install -c bioconda <SOFTWARE1> <SOFTWARE2>
