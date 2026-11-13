@@ -9,6 +9,7 @@
   * [Installing Software 1 - Modules](Week1/1-5_Installing_software_modules.md)
   * [Installint Software 2 - Conda](Week1/1-6_Installing_software_conda.md)
   * [RNA-seq Best Practices](Week1/1-7_261112_RNAseqBestPractices.pdf)
+  * [Week 1 - Bonus videos](Week1/1-8_Week1_Bonus.md)
 
 [Week2](Week2)
 
