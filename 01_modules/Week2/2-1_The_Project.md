@@ -1,18 +1,23 @@
 # Tuesday, November 17, 2026
 
------
-
-# Learning Objectives for Today:
-
   * Quiz - in class
   * Homework 1 & Reading 1 due today
 
 -----
 
-# The Project
+# Learning Objectives for Today:
 
-Over the course of the next few weeks, we will use an RNA-seq experiment and its dataset as an example. We will download the raw sequence reads from this dataset and analyze them using our RNA-seq Analysis Pipeline. Today, we will learn about the dataset and obtain its raw sequence reads. Tuesday, we will learn about the RNA-seq Analysis Pipeline.
+  * Know key principles of large project organization
+  * Be familiar with the best practices for documentation and record keeping
+  * Gain familiarity with Job Submission on an HPC system
+  * Understand that genomics data repositories archive data
+  * Learn how to download datasets from the Short Read Archive
 
+-----
+
+# The Project 
+
+We will use one RNA-seq experiment and its dataset as an example in this class. We will download the raw sequence reads from this dataset and analyze them using our RNA-seq Analysis Pipeline. Today, we will learn about the dataset and obtain its raw sequence reads. Tuesday, we will learn more details about the the RNA-seq Analysis Pipeline.
 
 [Gómez-Orte, et al., (2017) Effect of the diet type and temperature on the C. elegans transcriptome. Oncotarget. 2018 Feb 9; 9(11): 9556–9571.](https://pmc.ncbi.nlm.nih.gov/articles/PMC5839384/)
 
@@ -27,5 +32,11 @@ Over the course of the next few weeks, we will use an RNA-seq experiment and its
 <p align="center">
 <img width="50%" alt="dataset structure" src="../../05_images/dataset_structure.jpg">
 </p>
+
+## Questions and hypotheses
+
+  * Does diet or temperature have a greater impact on the transcriptome? 
+  * What types of pathways change when diet is altered?
+  * What types of pathways change when temperature is altered?
 
 Continue on to [Project Initiation](2-2_Project_Initiation.md)
