@@ -104,7 +104,8 @@ $ mkdir 01_input 02_scripts 03_output
   * You will not remember what you did unless you actually write it down
 
 <p align="center">
-<img width="70%" alt="file storage" src="../../05_images/ComputationalLabNotebook2.png">
+<img width="70%" alt="Computational lab notebook example 2" src="../../05_images/ComputationalLabNotebook2.png">
+<sub><b>Example:</b>Computational Lab Notebook on OneNote</sub>
 </p>
   
 
