@@ -4,7 +4,9 @@
 
 # Project Initation
 
-We will now start a project to analyze the Gomez-Orte RNA-seq data. 
+We will now start a project to analyze the Gomez-Orte RNA-seq data.
+
+----
 
 ## Step 1. Log onto ALPINE and activate conda environment 
 
@@ -35,6 +37,8 @@ conda activate 2026dsci
 ```
 
 </details>
+
+----
 
 ## Step 2. Start a Project Directory
 
@@ -80,6 +84,8 @@ $ mkdir 01_input 02_scripts 03_output
 ```
 
 :smile: **YAY!** Now we have a place to do our work!
+
+----
 
 ## Step 3. Write it down
 
