@@ -4,41 +4,66 @@
 
 # Project Initation
 
-We will now start a project. Quick review of some aspects of the ALPINE architecture.
+We will now start a project to analyze the Gomez-Orte RNA-seq data. 
 
-## Start an RNA-seq data directory
+## Step 1. Log onto ALPINE and activate conda environment 
 
-We will start a data analysis directory for this class and initiate a project within that directory.
+:hammer_and_wrench: **GROUP EXERCISE** Try doing the following steps independently.
 
-Currently, we are in our home directory `/home/erinnish@colostate.edu/`. The ALPINE staff have set up directories for each user. Let's review the general ALPINE Architecture:
+  1. Login to ALPINE through [OnDemand](https://ondemand-rmacc.rc.colorado.edu/) 
+  2. Open a Terminal by clicking **CLUSTERS** -> **>_Alpine Shell Access** 
+  3. Move to the compile node
+  4. Load the `sra-toolkit` module
+  5. Load the `anaconda` module
+  6. Activate your `2026dsci` environment
 
-### The Alpine System: 
+<details>
+  <summary>For details and tips click here</summary>
+
+```bash
+# Switch to the compile node
+acompile
+
+# Load required modules
+module avail
+module load sra-toolkit
+module load anaconda
+module list
+
+# Activate conda environment
+conda activate 2026dsci
+```
+
+</details>
+
+## Step 2. Start a Project Directory
+
+We will start a project directory and perform all our analytical steps within that directory.
+
+Currently, we are in our home directory. Mine looks like this: `/home/erinnish@colostate.edu/`.
+
+Review the ALPINE architecture: 
 
 <p align="center">
-<img width="60%" alt="alpine map" src="../../05_images/alpine_map.jpg">
+<img width="60%" alt="alpine map" src="../../05_images/alpineMap.png">
 </p>
 
-### Alpine File Storage: 
 
-[Detailed information about the file storage on ALPINE](https://curc.readthedocs.io/en/latest/compute/filesystems.html)
-
-Whereas the nodes are analogous to CPU and memory on your home laptop, the filesystem is analogous to your hard drive. This is where data will be stored. The ALPINE team has pre-organized several nice directories where each user can house their data. Each space has a designated purpose.
-
-Here are the different file storage spaces available:
+Review the file storage spaces available:
 
 <p align="center">
 <img width="60%" alt="file storage" src="../../05_images/alpineStorage.png">
 </p>
 
-:hammer_and_wrench: Let's start our project
-
 We will be using our scratch space to perform the projects in this class. That means, everything we do will be deleted 90 days from now!
 
-```
+:hammer_and_wrench: **GROUP EXERCISE** Let's start our directory
+
+```bash
 # Go to your scratch directory.
 $ cd /scratch/alpine/<eID>@colostate.edu   # Substitute <eID> with your eID
  
-# Create a directory for this class. Call it **DSCI512**
+# Create a directory for this class. Call it DSCI512
 $ mkdir DSCI512
  
 # Move into that directory
@@ -54,10 +79,42 @@ $ cd PROJ01_GomezOrte
 $ mkdir 01_input 02_scripts 03_output
 ```
 
-**YAY!** Now we have a place to do our work!
+:smile: **YAY!** Now we have a place to do our work!
 
-## Best Practices: write it down
+## Step 3. Write it down
 
+:pencil2: **Best Practice**
 
+  * Nothing inspires amnesia like computational biology
+  * You will do similar tasks multiple times
+  * You will not remember what you did unless you actually write it down
+
+**Different Computational Notebook Approaches:**
+
+  * Physical notebook
+  * Microsoft OneNote (shareable with your trainees and mentors)
+  * Electronic Lab Notebook (ELN) system such as LabArchives, Benchling
+  * Your computational notebook should be SEPARATE from your project directory
+
+**What to write down?**
+
+  * Write down the MINIMUM in your computational notebook
+  * Date
+  * Goal
+  * Platform & Directory (ALPINE & Dir, or LAPTOP & Dir)
+  * Did it work? 
+  * What you want to do next?
+  * Write down the MAXIMUM in your project directory (automated)
+
+:hammer_and_wrench: **GROUP EXERCISE** Start a Computational Notebook 
+
+  * Start your first entry. 
+
+:hammer_and_wrench: **GROUP EXERCISE** Start a README File. 
+
+Within the project folder, start a file called `README.txt` and write a brief description of your project
+
+> [!TIP]
+> Try to standardize how you format things in your written notes. ENP_01, ENP_02, ENP_03 for projects; 20261115 for dates; choose standardized, searchable, sortable names. 
 
 Continue on to [Running Jobs with SLURM](2_4_Running_Jobs_with_SLURM.md)
