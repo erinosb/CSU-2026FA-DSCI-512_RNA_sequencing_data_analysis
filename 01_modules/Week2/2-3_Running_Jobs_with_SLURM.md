@@ -174,7 +174,7 @@ More info:
 
 -----
 
-# Making SLURM easier to use
+# Making SLURM easier to use with ALIASES
 
 Because the `squeue -u $USER` command is cumbersome to type, let's make some aliases of shortcut commands.
 
@@ -217,13 +217,19 @@ $ sa
 $ suserc
 ```
 
-**!!! Exercise:** Try running `testscript.sbatch` again, this time with your new command aliases!
+:hammer_and_wrench: **INDEPENDENT PRACTICE EXERCISE** Try running `testscript.sbatch` again, this time with your new command aliases!
 
-## Some hackable sbatch scripts
+-----
+
+# Hackable sbatch scripts
 
 The example script above is great for a nice short, quick run. It's capabilities will be similar to a laptop but allow for a 2 hour job to complete.
 
-#### The intensive run
+## A typical run
+
+
+
+## The intensive run
 
 This run takes advantage of a full node but may take a while to start. (Remember: Max cores per Haswell node = 24; Max time = 24 hours)
 
@@ -252,7 +258,7 @@ Real runs or intensive runs:
 - The max time you can request in 24 hours
 - If you're waiting for your job to start and want to get an estimate of when it will start, try your `sa` command alias
 
-#### The tester run
+## The tester run
 
 This will run right away and is great for testing if things work. (Remember: Max nodes for a testing run = 2; Max processes for a testing run = 24 total; Max time is 30 min)
 
@@ -272,4 +278,24 @@ echo "world"
 sleep 30
 ```
 
+-----
+
+# Frequently Asked SLURM Questions
+
+### How much time and ntasks do I pick?
+
+  * This is part of the art of coding. Try doing a small task first, see how quickly it runs, then scale up accordingly.
+  * The more resources you request, the longer it will take your job to start
+
+### When will my job start?
+
+  * You can try: `squeue --user=$USER --start`
+  * 
+
+### If I close my computer, is my job still running? 
+
 Continue on to [Overview of R](2_5_Overview_of_R.md) 
+
+[More FREQUENTLY ASKED QUESTIONS](https://curc.readthedocs.io/en/latest/getting_started/faq.html)
+
+
