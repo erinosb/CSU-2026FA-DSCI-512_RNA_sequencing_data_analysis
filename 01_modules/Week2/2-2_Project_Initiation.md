@@ -40,7 +40,7 @@ conda activate 2026dsci
 
 We will start a project directory and perform all our analytical steps within that directory.
 
-Currently, we are in our home directory. Mine looks like this: `/home/erinnish@colostate.edu/`.
+Currently, we are in our home directory. Tony Stark's would looks like this: `/home/tstark@colostate.edu/`.
 
 Review the ALPINE architecture: 
 
@@ -89,14 +89,14 @@ $ mkdir 01_input 02_scripts 03_output
   * You will do similar tasks multiple times
   * You will not remember what you did unless you actually write it down
 
-**Different Computational Notebook Approaches:**
+:pencil2: **Different Computational Notebook Approaches:**
 
   * Physical notebook
   * Microsoft OneNote (shareable with your trainees and mentors)
   * Electronic Lab Notebook (ELN) system such as LabArchives, Benchling
   * Your computational notebook should be SEPARATE from your project directory
 
-**What to write down?**
+:pencil2: **What to write down?**
 
   * Write down the MINIMUM in your computational notebook
   * Date
