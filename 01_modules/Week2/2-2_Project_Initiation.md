@@ -1,5 +1,6 @@
-
-
+<p align="center">
+<img width="90%" alt="icons" src="../../05_images/headers_projects.png">
+</p>
 
 # Project Initation
 

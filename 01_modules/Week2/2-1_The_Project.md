@@ -1,3 +1,7 @@
+<p align="center">
+<img width="90%" alt="icons" src="../../05_images/headers_Slide1A.png">
+</p>
+
 # Tuesday, November 17, 2026
 
   * Quiz - in class
@@ -7,8 +11,7 @@
 
 # Learning Objectives for Today:
 
-  * Know key principles of large project organization
-  * Be familiar with the best practices for documentation and record keeping
+  * Be familiar with the best practices project organization (directories, documentation, versions)
   * Gain familiarity with Job Submission on an HPC system
   * Understand that genomics data repositories archive data
   * Learn how to download datasets from the Short Read Archive
@@ -35,8 +38,13 @@ We will use one RNA-seq experiment and its dataset as an example in this class. 
 
 ## Questions and hypotheses
 
+<details>
+  <summary>What are some research questions we could address with this study?</summary>
+
   * Does diet or temperature have a greater impact on the transcriptome? 
   * What types of pathways change when diet is altered?
   * What types of pathways change when temperature is altered?
+
+</details>
 
 Continue on to [Project Initiation](2-2_Project_Initiation.md)

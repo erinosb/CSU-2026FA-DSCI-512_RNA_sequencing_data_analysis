@@ -1,3 +1,7 @@
+<p align="center">
+<img width="90%" alt="icons" src="../../05_images/headers_run.png">
+</p>
+
 # Overview of Running Jobs with SLURM 
 
 ## Resources
