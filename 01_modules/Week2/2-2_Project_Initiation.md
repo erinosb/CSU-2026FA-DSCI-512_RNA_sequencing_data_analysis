@@ -8,6 +8,12 @@ We will now start a project to analyze the Gomez-Orte RNA-seq data.
 
 ----
 
+## Resources
+
+[Ten Simple Rules for Defining a Computational Biology Project](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
+
+[Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
+
 ## Step 1. Log onto ALPINE and activate conda environment 
 
 :hammer_and_wrench: **GROUP EXERCISE** Try doing the following steps independently.
