@@ -131,4 +131,4 @@ $ mkdir 01_input 02_scripts 03_output
 > [!TIP]
 > Try to standardize how you format things in your written notes. ENP_01, ENP_02, ENP_03 for projects; 20261115 for dates; choose standardized, searchable, sortable names. 
 
-Continue on to [Running Jobs with SLURM](2_3_Running_Jobs_with_SLURM.md)
+Continue on to [Running Jobs with SLURM](2-3_Running_Jobs_with_SLURM.md)
