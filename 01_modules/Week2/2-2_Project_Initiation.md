@@ -21,7 +21,7 @@ We will now start a project to analyze the Gomez-Orte RNA-seq data.
   <summary>For details and tips click here</summary>
 
 ```bash
-# Switch to the compile node
+# Move to the compile node
 acompile
 
 # Load required modules
@@ -52,7 +52,7 @@ Review the ALPINE architecture:
 Review the file storage spaces available:
 
 <p align="center">
-<img width="60%" alt="file storage" src="../../05_images/alpineStorage.png">
+<img width="80%" alt="file storage" src="../../05_images/alpineStorage.png">
 </p>
 
 We will be using our scratch space to perform the projects in this class. That means, everything we do will be deleted 90 days from now!
