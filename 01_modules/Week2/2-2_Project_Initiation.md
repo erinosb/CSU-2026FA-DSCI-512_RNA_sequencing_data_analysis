@@ -14,6 +14,8 @@ We will now start a project to analyze the Gomez-Orte RNA-seq data.
 
 [Ten Simple Rules for Reproducible Computational Research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
 
+----
+
 ## Step 1. Log onto ALPINE and activate conda environment 
 
 :hammer_and_wrench: **GROUP EXERCISE** Try doing the following steps independently.
@@ -124,9 +126,9 @@ $ mkdir 01_input 02_scripts 03_output
 
 :hammer_and_wrench: **GROUP EXERCISE** Start a README File. 
 
-Within the project folder, start a file called `README.txt` and write a brief description of your project
+  * Within the project folder, start a file called `README.txt` and write a brief description of your project
 
 > [!TIP]
 > Try to standardize how you format things in your written notes. ENP_01, ENP_02, ENP_03 for projects; 20261115 for dates; choose standardized, searchable, sortable names. 
 
-Continue on to [Running Jobs with SLURM](2_4_Running_Jobs_with_SLURM.md)
+Continue on to [Running Jobs with SLURM](2_3_Running_Jobs_with_SLURM.md)
