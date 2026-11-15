@@ -53,7 +53,9 @@ When we execute batch scripts, they don't run right away. Instead, they get in t
 - Start a file called `testscript.sh` using `touch` or `nano`.
 - Open `testscript.sh` by navigating to DASHBOARD, FILES, and editing the file. OR you can use nano.
 
-## Write the following code into `testscript.sh`
+## Running a bash script
+
+Coopy the following into `testscript.sh`
 
 ```bash
 #!/usr/bin/env bash
@@ -71,6 +73,9 @@ $ bash testscript.sh
 ```
 
 The script prints Hello, waits 30 seconds, then prints world, then waits 30 seconds.
+
+
+## Running an sbatch script
 
 To run jobs using SLURM, we take a typical `.sh` script and convert it to an `.sbatch` script. To turn a bash script into an sbatch script we just need to do a few things...
 
