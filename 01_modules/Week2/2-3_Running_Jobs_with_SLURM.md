@@ -17,32 +17,32 @@
 - **Supercomputers** and **compute clusters** are both architectures of computers in which multiple, small computers are stitched together so they function as a single, big computer. They differ in their scale, with the supercomputer term being used for larger systems.
 - **Servers:** this is another catch-all term that can also refer to a compute cluster (of varying sizes, some are small) but implies that the system is hosting some function for users.
 - **Nodes** are the individual, small computing units of which a supercomputer is comprised. Individual nodes are like mini-computers, each with its own CPUs, memory, and a bit of storage space.
-  - **Types of Compute Nodes:** Compute nodes are the nodes on the ALPINE system where we run jobs. They come in a few different types: **GPU** (graphical processing units), **HighMEM** (high memory nodes), and **Haswell** (typical, garden-variety, CPU)
-  - **Node design:** Each compute node can support multiple tasks. These tasks are referred to as either **processes** or **threads** or **cores**. This is similar to having a quad-CPU in your laptop that can support 4x processes at a time. The Haswell Nodes on ALPINE can support up to 24 processes. On ALPINE, each compute node will support 64 processes.
-
-## The ALPINE System: 
+  - **Login Node**
+  - **Compile Node**
+  - **Types of Compute Nodes:** Compute nodes are the nodes on the ALPINE system where we run jobs. They come in a few different types: **GPU** (graphical processing units), **HighMEM** (high memory nodes), and **AMD CPUs** (typical, garden-variety, CPU). There are currently 424 AMD CPUs
+  - **Node design:** Each compute node can support multiple tasks. These tasks are referred to as either **processes** or **threads** or **cores**. This is similar to having a quad-CPU in your laptop that can support 4x processes at a time. Most AMD CPU Nodes on ALPINE can support between 32 - 64 processes, and 33 of them can support 128 processes at a time.
 
 <p align="center">
-<img width="700" alt="alpine map" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/alpine_map.jpg">
+<img width="60%" alt="alpine map" src="../../05_images/alpineMap.png">
 </p>
 
-### Where do we run jobs when we are working on ALPINE?
+----
 
-- Try to avoid running jobs on the **login node!**
-- For small jobs and testing (single node) - these can be run directly from the command line on a **compile node**.
-  - Use `acompile` to switch from a **login node** to a **compile node**. 
-- For larger jobs, we submit the job to a **compute node**
+## Assigning jobs to compute nodes using SLURM
 
-### How do we submit a job to the compute node?
+  - Try to avoid running jobs on the **login node!**
+  - Use the **compile node** for small jobs, testing, and software installation
+  - Use **compute nodes** for all larger jobs
 
-- We use the **job scheduler** called **SLURM**
-- A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes. 
+We use the **job scheduler** called **SLURM** to assign jobs to the compute nodes. A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes.
 
-## Quick SLURM Intro 
+# Quick SLURM Overview 
 
-The job sharing utility that is installed on ALPINE is called **SLURM** and we use it by writing and executing **batch scripts**. Batch scripts are just specialized bash scripts that are executed using the command `sbatch`. Batch scripts do everything that bash scripts do, but in addition, **they request a certain amount of the supercomputer for use and request a certain amount of time on that hardware**. When we execute batch scripts, they don't run right away. Instead, they get in the queue and are assigned to a node based on the requested hardware, requested time, and availability.
+The job sharing utility that is installed on ALPINE is called **SLURM** and we use it by writing and executing **batch scripts**. Batch scripts are just specialized bash scripts that are executed using the command `sbatch`. Batch scripts do everything that bash scripts do, but in addition, **they request a certain amount of the supercomputer for use and request a certain amount of time on that hardware**. 
 
-**!!! Exercise:** Follow along. Let's do some SLURM practice.
+When we execute batch scripts, they don't run right away. Instead, they get in the queue and are assigned to a node based on the requested hardware, requested time, and availability.
+
+:hammer_and_wrench: **GROUP EXERCISE** Follow along. Let's do some SLURM practice.
 
 - First, navigate to the space `/scratch/alpine/$USER`
 - Let's make a new directory called `test_slurm`
@@ -51,7 +51,7 @@ The job sharing utility that is installed on ALPINE is called **SLURM** and we u
 - Start a file called `testscript.sh` using `touch` or `nano`.
 - Open `testscript.sh` by navigating to DASHBOARD, FILES, and editing the file. OR you can use nano.
 
-### Write the following code into `testscript.sh`
+## Write the following code into `testscript.sh`
 
 ```
 #!/usr/bin/env bash
@@ -99,13 +99,13 @@ echo "world"
 sleep 30
 ```
 
-**!!! Exercise:** Copy the `.sh` script into an `.sbatch` script called `testscript.sbatch`
+:hammer_and_wrench: **GROUP EXERCISE** FCopy the `.sh` script into an `.sbatch` script called `testscript.sbatch`
 
 ```
 $ cp testscript.sh testscript.sbatch
 ```
 
-**!!! Exercise:** open `testscript.sbatch` in a text editor and convert it to an `.sbatch` script by adding the following directives:
+:hammer_and_wrench: **GROUP EXERCISE** Fopen `testscript.sbatch` in a text editor and convert it to an `.sbatch` script by adding the following directives:
 
 ```
 #!/usr/bin/env bash
@@ -113,8 +113,8 @@ $ cp testscript.sh testscript.sbatch
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --time=0:1:30
-#SBATCH --partition=atesting
-#SBATCH --qos=testing
+#SBATCH --partition=acpu
+#SBATCH --qos=cpu-testing
 #SBATCH --output=sample-%j.out
  
 ## Software is loaded here...
@@ -136,17 +136,17 @@ $ sbatch testscript.sbatch
 Use the following commands to interact with the progress of your script:
 
 ```
-$ squeue -u $USER    # to see all the scripts you, the user, are running
-$ sacct -u $USER              # See some stats about running or previously run jobs
+$ squeue -u $USER      # to see all the scripts you, the user, are running
+$ sacct -u $USER       # See some stats about running or previously run jobs
 $ sacct -X --format JobID, JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Submit,Start,End  # A nicely formatted status output
-$ scancel <jobID#>   # to cancel a script
+$ scancel <jobID#>     # to cancel a script
 ```
 
 Do you see a log file that was created? Peek into it to explore it.
 
-**??** What just happened? 
+:question: What just happened? 
 
-**??** What do all the #SBATCH lines mean? 
+:question: What do all the #SBATCH lines mean? 
 
 Everything after an `#SBATCH` is a **SLURM directive**. Think of these like **options**. You're telling SLURM details about how you want your script to be run.
 
@@ -154,14 +154,17 @@ Everything after an `#SBATCH` is a **SLURM directive**. Think of these like **op
 #SBATCH --nodes=1   <-- Requests 1 node
 #SBATCH --ntasks=1  <-- Requests 1 core (can be up to 64 per single node)
 #SBATCH --time=0:1:30   <-- Requests 1 minute & 30 seconds of time. Job will stop then
-#SBATCH --partition=atesting  <-- Requests a "testing partition"
-#SBATCH --qos=testing  <-- Used for all testing partitions
+#SBATCH --partition=acpu  <-- Requests a "testing partition"
+#SBATCH --qos=cpu-testing  <-- Used for all testing partitions
 #SBATCH --output=sample-%j.out <-- saves the output in a file named sample-%j.out where %j is a variable where the job number will output
 ```
 
 More info: 
-- Research Computing at Boulder - [Guide to running batch jobs](https://curc.readthedocs.io/en/latest/running-jobs/batch-jobs.html)
-- Research Computing at Boulder - [Guide to SLURM directives](https://curc.readthedocs.io/en/latest/running-jobs/job-resources.html) 
+
+  * [SLURM Directive Examples - CURC](https://curc.readthedocs.io/en/latest/clusters/alpine/slurm_directive_ex.html)
+  * [ALPINE Hardware - CURC](https://curc.readthedocs.io/en/latest/clusters/alpine/alpine-hardware.html) 
+
+-----
 
 ## Making SLURM easier to use
 
