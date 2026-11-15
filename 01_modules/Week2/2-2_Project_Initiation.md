@@ -119,12 +119,15 @@ $ mkdir 01_input 02_scripts 03_output
 :pencil2: **What to write down?**
 
   * Write down the MINIMUM in your computational notebook
-  * Date
-  * Goal
-  * Platform & Directory (ALPINE & Dir, or LAPTOP & Dir)
-  * Did it work? 
-  * What you want to do next?
+    * Date
+    * Goal
+    * Platform & Directory (ALPINE & Dir, or LAPTOP & Dir)
+    * Did it work? 
+    * What you want to do next?
   * Write down the MAXIMUM in your project directory (automated)
+    * Add readme files
+    * Automate output files
+    * Save all versions
 
 :hammer_and_wrench: **GROUP EXERCISE** Start a Computational Notebook 
 
