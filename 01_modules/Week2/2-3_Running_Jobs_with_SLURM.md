@@ -28,13 +28,15 @@
 
 ----
 
-## Assigning jobs to compute nodes using SLURM
 
   - Try to avoid running jobs on the **login node!**
   - Use the **compile node** for small jobs, testing, and software installation
   - Use **compute nodes** for all larger jobs
 
 We use the **job scheduler** called **SLURM** to assign jobs to the compute nodes. A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes.
+
+
+----- 
 
 # Quick SLURM Overview 
 
@@ -53,7 +55,7 @@ When we execute batch scripts, they don't run right away. Instead, they get in t
 
 ## Write the following code into `testscript.sh`
 
-```
+```bash
 #!/usr/bin/env bash
  
 echo "hello"
@@ -64,7 +66,7 @@ sleep 30
 
 This script is run with the command:
 
-```
+```bash
 $ bash testscript.sh
 ```
 
@@ -77,7 +79,8 @@ To run jobs using SLURM, we take a typical `.sh` script and convert it to an `.s
 3. execute with the command `$ sbatch <yourscript.sbatch>`
 
 Sbatch scripts look like so...
-```
+
+```bash
 #!/bin/usr/env bash
  
 ## Directives go here...
@@ -101,13 +104,13 @@ sleep 30
 
 :hammer_and_wrench: **GROUP EXERCISE** FCopy the `.sh` script into an `.sbatch` script called `testscript.sbatch`
 
-```
+```bash
 $ cp testscript.sh testscript.sbatch
 ```
 
-:hammer_and_wrench: **GROUP EXERCISE** Fopen `testscript.sbatch` in a text editor and convert it to an `.sbatch` script by adding the following directives:
+:hammer_and_wrench: **GROUP EXERCISE** Open `testscript.sbatch` in a text editor and convert it to an `.sbatch` script by adding the following directives:
 
-```
+```bash
 #!/usr/bin/env bash
  
 #SBATCH --nodes=1
@@ -129,13 +132,13 @@ sleep 30
 
 Submit this script to the SLURM job scheduler using this command:
 
-```
+```bash
 $ sbatch testscript.sbatch
 ```
 
 Use the following commands to interact with the progress of your script:
 
-```
+```bash
 $ squeue -u $USER      # to see all the scripts you, the user, are running
 $ sacct -u $USER       # See some stats about running or previously run jobs
 $ sacct -X --format JobID, JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Submit,Start,End  # A nicely formatted status output
@@ -150,7 +153,7 @@ Do you see a log file that was created? Peek into it to explore it.
 
 Everything after an `#SBATCH` is a **SLURM directive**. Think of these like **options**. You're telling SLURM details about how you want your script to be run.
 
-```
+```bash
 #SBATCH --nodes=1   <-- Requests 1 node
 #SBATCH --ntasks=1  <-- Requests 1 core (can be up to 64 per single node)
 #SBATCH --time=0:1:30   <-- Requests 1 minute & 30 seconds of time. Job will stop then
@@ -166,13 +169,13 @@ More info:
 
 -----
 
-## Making SLURM easier to use
+# Making SLURM easier to use
 
 Because the `squeue -u $USER` command is cumbersome to type, let's make some aliases of shortcut commands.
 
-**!!! Exercise:** Let's navigate to our home directory and add some aliases to our `.bashrc` file
+:hammer_and_wrench: **GROUP EXERCISE** Let's navigate to our home directory and add some aliases to our `.bashrc` file
 
-```
+```bash
 # cd with no argument returns you to your home directory
 $ cd 
 $ pwd
@@ -180,9 +183,12 @@ $ pwd
 
 Go to the DASHBOARD. Select FILES. Edit the file `.bashrc`
 
+> [!TIP]
+> If you don't see `.bashrc` make sure the **Show Dotfile** box is checked.
+
 Copy and paste the following lines of code to the end of the `.bashrc` file:
 
-```
+```bash
 #Alises
 alias scheck="squeue -u $USER"
 alias sa='sacct -X --format JobID,JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Submit,Start,End'
@@ -194,7 +200,7 @@ alias suser="sacct -u $USER"
 - Return to the prompt and the home directory
 - To activate your new `.bashrc`, source it...
 
-```
+```bash
 $ source .bashrc
 ```
 
