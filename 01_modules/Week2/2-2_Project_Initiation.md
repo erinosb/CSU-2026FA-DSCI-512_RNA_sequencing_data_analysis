@@ -103,6 +103,11 @@ $ mkdir 01_input 02_scripts 03_output
   * You will do similar tasks multiple times
   * You will not remember what you did unless you actually write it down
 
+<p align="center">
+<img width="70%" alt="file storage" src="../../05_images/ComputationalLabNotebook2.png">
+</p>
+  
+
 :pencil2: **Different Computational Notebook Approaches:**
 
   * Physical notebook
