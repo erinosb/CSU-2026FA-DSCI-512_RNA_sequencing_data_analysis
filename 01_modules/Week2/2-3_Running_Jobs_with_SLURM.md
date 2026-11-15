@@ -290,12 +290,15 @@ sleep 30
 ### When will my job start?
 
   * You can try: `squeue --user=$USER --start`
-  * 
 
 ### If I close my computer, is my job still running? 
 
-Continue on to [Overview of R](2_5_Overview_of_R.md) 
+  * Yes
 
 [More FREQUENTLY ASKED QUESTIONS](https://curc.readthedocs.io/en/latest/getting_started/faq.html)
+
+
+Continue on to [Overview of R](2_5_Overview_of_R.md) 
+
 
 
