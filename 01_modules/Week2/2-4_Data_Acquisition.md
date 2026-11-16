@@ -1,6 +1,9 @@
+<p align="center">
+<img width="90%" alt="icons" src="../../05_images/headers_run.png">
+</p>
+
+
 # Data Acquisition
-
-
 
 Let's go ahead and log into [ALPINE](https://ondemand-rmacc.rc.colorado.edu) if you're not already logged in:
 
