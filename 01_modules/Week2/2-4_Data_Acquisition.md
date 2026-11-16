@@ -1,5 +1,5 @@
 <p align="center">
-<img width="90%" alt="icons" src="../../05_images/headers_run.png">
+<img width="90%" alt="icons" src="../../05_images/headers_dna.png">
 </p>
 
 
