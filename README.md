@@ -26,7 +26,7 @@ Please see the [Computer Requirements](04_resources/Computer_requirements.md)
 | Nov 12 | [Week1](01_modules/Week1)  | RNA seq protocol </br> Installing software </br> Best practices |  |  |
 | Bonus Content | [Week1](01_modules/Week1)  |  Video Links |  |  |
 | Nov 17 | [Week2](01_modules/Week2) | The project </br> Project initiation </br> SLURM </br> Data acquisition | [Reading 1 due](02_assignments/Reading1.md) | [Homework1 due](02_assignments/Homework1.md) |
-| Nov 19 | [Week2](01_modules/Week2)  | Data acquisition </br> Pre-processing </br> </br> The Pipeline </br> Downloading Genomes </br> Building Indices </br> R |  |  |
+| Nov 19 | [Week2](01_modules/Week2)  | Data acquisition </br> The Pipeline </br> Downloading Genomes </br> Building Indices </br> R |  |  |
 | Bonus Content | [Week2](01_modules/Week2)  | | | |
 | Nov 24 | Fall Break |  | | |
 | Dec 26 | Fall Break | | | |
