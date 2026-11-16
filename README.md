@@ -24,13 +24,13 @@ Please see the [Computer Requirements](04_resources/Computer_requirements.md)
 |-------|------|-------------|---------|-------------|
 | Nov 10 | [Week1](01_modules/Week1) | Course Intro </br> ALPINE </br> Intro to RNA-seq </br> RNA seq protocol |  |  |
 | Nov 12 | [Week1](01_modules/Week1)  | RNA seq protocol </br> Installing software </br> Best practices |  |  |
-| Bonus Content | [Week1](01_modules/Week1)  |  |  |  |
-| Nov 17 | [Week2](01_modules/Week2) | The project & pipeline </br> Installing Software 2 </br> Project initiation </br> SLURM |  | [Reading 1 due](02_assignments/Reading1.md) </br> [Homework 1 due](02_assignments/Homework1.md) |
-| Nov 19 | [Week2](01_modules/Week2)  | R </br> Data acquisition </br> Pre-processing |  |  |
+| Bonus Content | [Week1](01_modules/Week1)  |  Video Links |  |  |
+| Nov 17 | [Week2](01_modules/Week2) | The project </br> Project initiation </br> SLURM </br> Data acquisition | [Reading 1 due](02_assignments/Reading1.md) | [Homework1 due](02_assignments/Homework1.md) |
+| Nov 19 | [Week2](01_modules/Week2)  | Data acquisition </br> Pre-processing </br> </br> The Pipeline </br> Downloading Genomes </br> Building Indices </br> R |  |  |
 | Bonus Content | [Week2](01_modules/Week2)  | | | |
 | Nov 24 | Fall Break |  | | |
 | Dec 26 | Fall Break | | | |
-| Dec 1 | [Week3](01_modules/Week3) | Automation 1 </br> Automation 2| | |
+| Dec 1 | [Week3](01_modules/Week3) | Automation 1 </br> Automation 2| [Reading2 due](02_assignments/Reading2.md) | [Homework2 due](02_assignments/Homework2.md) </br> [Homework3 due](02_assignments/Homework3.md)|
 | Dec 3  | [Week3](01_modules/Week3) | Alignment </br> Building indices | | |
 | Bonus Content | [Week3](01_modules/Week3)| | | |
 | Dec 8 | [Week4](01_modules/Week4) | Tabulation </br> Differential Expression </br> DESeq2  | | |
