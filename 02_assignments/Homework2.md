@@ -59,6 +59,15 @@ Start an entry for each day you work on this homework. This can be a physical no
 
 -----
 
+## Tips
+
+**! NOTE:** The pipeline we are using works on paired-end sequencing. Please try to identify a dataset that uses paired-end sequencing. 
+
+**! NOTE:** microarray, ddPCR, minION, and pacBIO datasets will not work for this assignment.
+
+-----
+
+
 ## Possible Projects
 
 *Yeast*
@@ -86,6 +95,10 @@ Start an entry for each day you work on this homework. This can be a physical no
 [Ahn H, Jung I, Shin SJ, Park J, Rhee S, Kim JK, Jung W, Kwon HB, Kim S. Transcriptional Network Analysis Reveals Drought Resistance Mechanisms of AP2/ERF Transgenic Rice. Front Plant Sci. 2017](https://pubmed.ncbi.nlm.nih.gov/28663756/)
 
 *Mouse*
+
+[Nardou R, Sawyer E, Song YJ, Wilkinson M, Padovan-Hernandez Y, de Deus JL, Wright N, Lama C, Faltin S, Goff LA, Stein-O'Brien GL, Dölen G. Psychedelics reopen the social reward learning critical period. (2023) Nature. Jun;618(7966):790-798. doi: 10.1038/s41586-023-06204-3.](https://pubmed.ncbi.nlm.nih.gov/37316665/)
+
+ - Just pick a subset
 
 [Brady RA, Bruno VM, Burns DL. (2015) RNA-Seq Analysis of the Host Response to Staphylococcus aureus Skin and Soft Tissue Infection in a Mouse Model](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0124877)
 
