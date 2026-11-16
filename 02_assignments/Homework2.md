@@ -48,6 +48,15 @@ Start an entry for each day you work on this homework. This can be a physical no
     * If it is not clear which samples are which, you can download the whole dataset and sort it out later.
   * To do the download, follow the instructions laid out in [Data Acquisition](../01_modules/Week2/2-4_Data_Acquisition.md)
 
+## Step 4: Turn it in
+
+  * :Exclamation: If you are using your own data that you already have, just upload your dataset to ALPINE and describe how you did this. 
+    * [Files on CURC](https://curc.readthedocs.io/en/latest/open_ondemand/files_app.html)
+  * :Exclamation: If your dataset is not accessible through an SRA link, but uses some other data distribution strategy, just follow the instructions to obtain the data and report what you did to get it onto ALPINE. This may require downloading data to your local computer and then uploading that to ALPINE.
+  * :Exclamation:  More tips on uploading data to ALPINE. Sometimes, it can be frustrating to upload several large datasets to ALPINE using the upload icon. In these cases, using dedicated sFTP software can work much more smoothly.
+
+**What to turn in:** Turn in your Computational Lab Notebook Entries. Be sure to state at the end whether you were successful in obtaining all the data or whether you need futhre help.
+
 -----
 
 ## Possible Projects
