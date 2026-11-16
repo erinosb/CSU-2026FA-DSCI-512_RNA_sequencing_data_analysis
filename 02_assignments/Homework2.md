@@ -61,9 +61,9 @@ Start an entry for each day you work on this homework. This can be a physical no
 
 ## Tips
 
-**! NOTE:** The pipeline we are using works on paired-end sequencing. Please try to identify a dataset that uses paired-end sequencing. 
+:exclamation: **NOTE:** The pipeline we are using works on paired-end sequencing. Please try to identify a dataset that uses paired-end sequencing. 
 
-**! NOTE:** microarray, ddPCR, minION, and pacBIO datasets will not work for this assignment.
+:exclamation: **NOTE:** microarray, ddPCR, minION, and pacBIO datasets will not work for this assignment.
 
 -----
 
