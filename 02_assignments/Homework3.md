@@ -54,4 +54,4 @@ SRR5832199_1.fastq      SRR5832199_2.fastq      EG18    18_Bsubtilis_25_3       
 
 ## Turn it in:
 
-2) Turn in your metadata file as a .txt file.
+Turn in your metadata file as a .txt file to canvas
