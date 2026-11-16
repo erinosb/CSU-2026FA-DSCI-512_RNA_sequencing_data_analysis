@@ -57,7 +57,7 @@ If you don't see these advanced lessons, check the reference information: [The S
 
 Please answer the following and turn it in:
 
-  - **Report** What did you work on?
+  - **Report** What four modules did you work on?
   - **Assess** What was your R experience at the beginning of the exercise? 
   - **Evaluate** What did you learn? What did you find most useful?
   - **Review** Was this a good lesson? Would you recommend it to other students?
