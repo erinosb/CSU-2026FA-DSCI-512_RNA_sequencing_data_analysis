@@ -4,7 +4,7 @@
 Due Tuesday, November 17, 2026, 10:00 am.
 Turn in on canvas.
 
-RNA sequencing: the teenage years - PART 1 [article here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/stark_2019.pdf)
+RNA sequencing: the teenage years - PART 1 [article here](../04_resources/stark_2019.pdf)
 DON'T READ THE WHOLE REVIEW.
 
   * Read RNA sequencing: the teenage years (Stark et al., 2019) pages 631 - 636. Read up to the section entitled“Improved RNA-seq library preparation”.
