@@ -77,6 +77,10 @@ Start an entry for each day you work on this homework. This can be a physical no
 - 12 files
 - 8 - 12 minutes download per file
 
+[Herranz, Vandenbrink, Villacampa, Manzano, Poehlman, Feltus, Kiss, and Medina. (2019) RNAseq Analysis of the Response of Arabidopsis thaliana to Fractional Gravity Under Blue-Light Stimulation During Spaceflight. Front Plant Sci. 2019 Nov 26;10:1529.](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01529/full)
+
+- untested
+
 *Arabidopsis* 
 
 [Herranz, Vandenbrink, Villacampa, Manzano, Poehlman, Feltus, Kiss, and Medina. (2019) RNAseq Analysis of the Response of Arabidopsis thaliana to Fractional Gravity Under Blue-Light Stimulation During Spaceflight. Front Plant Sci. 2019 Nov 26;10:1529.](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01529/full)
@@ -98,7 +102,7 @@ Start an entry for each day you work on this homework. This can be a physical no
 
 [Nardou R, Sawyer E, Song YJ, Wilkinson M, Padovan-Hernandez Y, de Deus JL, Wright N, Lama C, Faltin S, Goff LA, Stein-O'Brien GL, Dölen G. Psychedelics reopen the social reward learning critical period. (2023) Nature. Jun;618(7966):790-798. doi: 10.1038/s41586-023-06204-3.](https://pubmed.ncbi.nlm.nih.gov/37316665/)
 
- - Just pick a subset
+- untested
 
 [Brady RA, Bruno VM, Burns DL. (2015) RNA-Seq Analysis of the Host Response to Staphylococcus aureus Skin and Soft Tissue Infection in a Mouse Model](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0124877)
 
