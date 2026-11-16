@@ -8,7 +8,7 @@ If your grant is supported by US government funds, you must deposit your data in
 
 **!!! EXERCISE:** Let's load the SRAtoolkit module
 ```
-$ acompile
+$ acompile --time=03:00:00
 $ module list             # this lists what you have installed already
 $ module spider sra       # this searches for things that have 'sra' in them
 $ module load sra-toolkit # this installs the pre-loaded sra-toolkit

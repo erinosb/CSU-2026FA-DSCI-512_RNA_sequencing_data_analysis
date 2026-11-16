@@ -22,7 +22,7 @@ We will now start a project to analyze the Gomez-Orte RNA-seq data.
 
   1. Login to ALPINE through [OnDemand](https://ondemand-rmacc.rc.colorado.edu/) 
   2. Open a Terminal by clicking **CLUSTERS** -> **>_Alpine Shell Access** 
-  3. Move to the compile node
+  3. Move to the compile node (Give yourself 3 hours with  `--time=03:00:00`)
   4. Load the `sra-toolkit` module
   5. Load the `anaconda` module
   6. Activate your `2026dsci` environment
@@ -32,7 +32,7 @@ We will now start a project to analyze the Gomez-Orte RNA-seq data.
 
 ```bash
 # Move to the compile node
-acompile
+acompile --time=03:00:00
 
 # Load required modules
 module avail

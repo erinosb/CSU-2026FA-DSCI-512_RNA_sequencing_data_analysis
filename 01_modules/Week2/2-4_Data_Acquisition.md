@@ -1,5 +1,7 @@
 # Data Acquisition
 
+
+
 Let's go ahead and log into [ALPINE](https://ondemand-rmacc.rc.colorado.edu) if you're not already logged in:
 
 Go ahead and load the sra-toolkit module.
@@ -7,7 +9,7 @@ Go ahead and load the sra-toolkit module.
 **Once there**
 
 ```
-$ acompile --time=2:00:00
+$ acompile --time=3:00:00
 $ module load sra-toolkit
 ```
 
