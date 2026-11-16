@@ -14,3 +14,7 @@
 - Write two sentences summarizing what you read.
 - Write one sentence stating something that you learned that you can link to your own research or the work you hope to do in the future.
 - List two papers referenced in this article that are of interest to you and why. 
+
+## Optional
+
+- Continue on in your reading for sections relevant to your research interests!
