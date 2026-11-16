@@ -2,19 +2,7 @@
 <img width="90%" alt="icons" src="../../05_images/headers_dna.png">
 </p>
 
-
 # Data Acquisition
-
-Let's go ahead and log into [ALPINE](https://ondemand-rmacc.rc.colorado.edu) if you're not already logged in:
-
-Go ahead and load the sra-toolkit module.
-
-**Once there**
-
-```
-$ acompile --time=3:00:00
-$ module load sra-toolkit
-```
 
 How do we obtain RNA-seq data?
 
@@ -27,13 +15,17 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 - It is your responsibility as an author to upload the data to the repository and provide the **reviewer link** to the journal when you submit your manuscript.
 - It is your responsibility as the author to contact NCBI when your paper is **published** and assist them in lifting the embargo and linking the repository to the published work.
 
+------
+
 ## Resources
 
 [SRA-Tools - fasterq-dump](https://github.com/ncbi/sra-tools/wiki/HowTo:-fasterq-dump)
 
-## Obtain the Gomez-Orté Dataset Information
+-----
 
-**!!! Exercise:** Let's download one of the Gomez-Orté files together.
+# Obtain the Gomez-Orté Dataset Information
+
+:hammer_and_wrench: **Group Exercise:** Let's download one of the Gomez-Orté files together.
 
 - **First**, consult the Gomez-Orté manuscript: [Gomez-Orté et al., 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5839384/)
 - **Second**, search for **GEO** or **GSE** in the document and find this reference in the materials and methods section: 
