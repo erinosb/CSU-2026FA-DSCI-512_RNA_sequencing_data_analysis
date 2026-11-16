@@ -1,9 +1,11 @@
-# Assignment #2
+# Homework #4
 
-  - Due December 1st, 2026, 10:00 am
+  - Due December 8th, 2026, 10:00 am
   - Turn in on canvas
 
-## Learn R : PART 1
+----
+
+# Learn R
 
 <p align="center">
 <img width="30%" alt="swirl" src="../05_images/swirl.png">
@@ -51,7 +53,7 @@ Advanced R lessons on Swirl:
 
 If you don't see these advanced lessons, check the reference information: [The Swirl Course Network](https://swirlstats.com/scn/title.html)
 
-## What to turn in
+## Turn it in
 
 Please answer the following and turn it in:
 
