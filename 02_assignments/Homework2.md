@@ -1,61 +1,88 @@
-# Assignment #2
+# Homework #2
 
   - Due December 1st, 2026, 10:00 am
   - Turn in on canvas
 
-## Learn R : PART 1
+----
 
-<p align="center">
-<img width="30%" alt="swirl" src="../05_images/swirl.png">
-</p>
+# Obtain RNA-seq .fastq files
 
-Perform this exercise on R Studio using Swirl. Make sure you have R and R studio installed! 
+## Step 1: Choose a dataset
 
-Later in this course, we will be using modules in R to analyze RNA-seq data. To prepare ourselves for those lessons, Homework #2 will take you on a tour of R. Some people already have experience in R, but many do not. Either way, you'll be fine. We will use **Swirl** an interactive R tutorial program and you can learn at the level that suits you best.
+For this homework, you will download or upload the dataset you will use for your **Final Exam Project** onto ALPINE.
 
-[Intro to Swirl for learners](https://swirlstats.com/students.html)
+  - Remember, you can choose to use 1) your own data, 2) a published dataset in your field, 3) any of the suggested datasets below. These are also listed in [Reading #2](READIN2.md).
+  - Download the dataset (or a portion of it) to your scratch space on ALPINE.
+  - To do this, follow the instructions laid out in [Data Acquisition](../01_modules/Week2/2-4_Data_Acquisition.md)
 
-------
+-----
 
-## Assignment
+## Step 2: Start a Computational Lab Notebook
 
-**If you are new to R:**
+Start an entry for each day you work on this homework. This can be a physical noteobook, a OneNote directory, an ELN (Electronic Lab Notebook), or a space on your local computer. It should not be on ALPINE. 
 
-  - If you are new to the R language and environment, please take the first Swirl tutorials. Aim to get through Lessons 1 - 4.
-    - Basic Building Blocks
-    - Workspaces & Files
-    - Sequences of Numbers
-    - Vectors
-  - However, the idea here is that we can do self-paced learning. If you need to focus on the first two lessons to really understand them, do that. If you want to jam ahead and learn more, you can do that, too. You can still do the sections of the class that involve R even if you don't get through all the suggested lessons.
+  - Write the date
+  - Write a few introductory sentences to state your goal
+  - Write directory where you are working
+  - State generally what your goal is for the working session. 
+    - You don't need to copy and paste all commands, but you need to write where these commands are kept (script names, etc)
+  - There should be some assessments and personal reflection - “This worked; This didn't work; etc”
 
-**If you are an experienced or advanced R user:**
 
-  - Select some new lessons on Swirl to tackle topics you haven't mastered yet.
-  - The tidyverse packages, found under “Exploratory Data Analysis” (will cover ggplot2) and “Getting and Cleaning Data” (will cover dplyr), are highly recommend.
-  - Feel free to download and take any of the lessons available. These are listed on [github](https://github.com/swirldev/swirl_courses) and on the [swirl webpage](https://swirlstats.com/students.html).
-  - Work through the lessons that challenge you.
+## Step 2: Start a Project Directory
 
-## Lesson Options
+  * Consdier putting it in the same directory on your scratch spaced that we started called DSCI512
+    * Consider naming it PROJ02_<titlehere>
+  * Create subdirectories (`01_input`, `02_scripts`, `03_output`)
+  * Start a **README.txt file**. Include the following
+    * Date
+    * General Goal
+    * Any URL links that are noteworthy
+    * This can be brief.
 
-Base R lessons on Swirl:
+## Step 3: Download your .fastq files into the 01_input directory
 
-<p align="center">
-<img width="75%" alt="swirl" src="../05_images/swirl_screenshot.png">
-</p>
+  * Select your dataset.
+  * Aim for 6 - 32 files. More files than that can be cumbersome. 12 - 24 is ideal.
+  * This may mean that you will end up ignoring some of the files in your dataset
+    * If it is not clear which samples are which, you can download the whole dataset and sort it out later.
+  * To do the download, follow the instructions laid out in [Data Acquisition](../01_modules/Week2/2-4_Data_Acquisition.md)
 
-Advanced R lessons on Swirl:
+-----
 
-<p align="center">
-<img width="75%" alt="swirl advanced" src="../05_images/swirl_advanced_screenshot.png">
-</p>
+## Possible Projects
 
-If you don't see these advanced lessons, check the reference information: [The Swirl Course Network](https://swirlstats.com/scn/title.html)
+*Yeast*
 
-## What to turn in
+[Dong Y, Hu J, Fan L, and Chen Q. (2016) RNA-seq-based transcriptomic and metabolomic analysis reveal stress responses and programmed cell death induced by acetic acid in Saccharomyces cerevisiae. Scientific Reports. 7:4.](https://www.nature.com/articles/srep42659)
 
-Please answer the following and turn it in:
+- 12 files
+- 8 - 12 minutes download per file
 
-  - **Report** What did you work on?
-  - **Assess** What was your R experience at the beginning of the exercise? 
-  - **Evaluate** What did you learn? What did you find most useful?
-  - **Review** Was this a good lesson? Would you recommend it to other students?
+*Arabidopsis* 
+
+[Herranz, Vandenbrink, Villacampa, Manzano, Poehlman, Feltus, Kiss, and Medina. (2019) RNAseq Analysis of the Response of Arabidopsis thaliana to Fractional Gravity Under Blue-Light Stimulation During Spaceflight. Front Plant Sci. 2019 Nov 26;10:1529.](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01529/full)
+
+- This is a pretty big dataset. Suggest just using a low-gravity & high gravity conditions.
+- This download's from a NASA-managed site, not from SRA. You'll need to download the data to your local computer and then upload it to ALPINE manually.
+- Go to “Study Files” and download “Raw Sequence Data” appropriate for the conditions you select to study.
+
+[Park et al., (2019) The transcriptome analysis of the Arabidopsis thaliana in response to the Vibrio vulnificus by RNA-sequencing. PLoS One. 2019 Dec 16;14(12):e0225976.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225976)
+
+- Roughly 15 minutes per sample
+- 10 samples
+
+*Rice*
+
+[Ahn H, Jung I, Shin SJ, Park J, Rhee S, Kim JK, Jung W, Kwon HB, Kim S. Transcriptional Network Analysis Reveals Drought Resistance Mechanisms of AP2/ERF Transgenic Rice. Front Plant Sci. 2017](https://pubmed.ncbi.nlm.nih.gov/28663756/)
+
+*Mouse*
+
+[Brady RA, Bruno VM, Burns DL. (2015) RNA-Seq Analysis of the Host Response to Staphylococcus aureus Skin and Soft Tissue Infection in a Mouse Model](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0124877)
+
+- Suggest just focusing on the Day 7 data. Even that took about 8 hrs to download.
+
+[Tuipulotu, Netzler, Lun, Mackenzie, and White1. (2017) RNA Sequencing of Murine Norovirus-Infected Cells Reveals Transcriptional Alteration of Genes Important to Viral Recognition and Antigen Presentation. Front. Immunol. 11 August](https://pubmed.ncbi.nlm.nih.gov/28848558/)
+
+- This dataset is large. Just work on a subset of the samples
+- Some samples may be organized into multiple small files that will need to be merged together
