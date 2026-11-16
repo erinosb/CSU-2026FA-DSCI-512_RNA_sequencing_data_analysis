@@ -7,6 +7,9 @@
 
 # Obtain RNA-seq .fastq files
 
+> [!WARNING]
+> ALPINE is often down on Wednesdays for maintenance. ALPINE can sometimes go down unexpectedly. 
+
 ## Step 1: Choose a dataset
 
 For this homework, you will download or upload the dataset you will use for your **Final Exam Project** onto ALPINE.
