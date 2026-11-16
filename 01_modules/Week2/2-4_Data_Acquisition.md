@@ -31,7 +31,7 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 - **Second**, search for **GEO** or **GSE** in the document and find this reference in the materials and methods section: 
 
 <p align="center">
-<img width="700" alt="GEO info" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/GEO_info.png">
+<img width="50%" alt="GEO info" src="../../05_images/GEO_info.png">
 </p>
 
 - **Third**, google search **GSE101524** to find its NCBI GEO Entry: [GSE101524](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE101524).
@@ -41,60 +41,92 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 - **Fourth**, we want to link to the SRA repository data by clicking on SRA Run Selector at the bottom of the page, here:
 
 <p align="center">
-<img width="700" alt="data aquisition" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/data_acquisition.png">
+<img width="80%" alt="data aquisition" src="../../05_images/data_acquisition.png">
 </p>
 
-## Test the SRA-Toolkit
+----
+
+# Test the SRA-Toolkit
 
 Let's test that sra-tools is working
 
+```bash
+fasterq-dump #test that it works.  You should see instructions
 ```
-$ fasterq-dump --help #test that it works
-```
+
+---- 
 
 ## Download a single file
 
 Say we want to download a single .fastq file from a dataset. We'll use **fasterq-dump** within the **sra-tools** suite of tools to do this.
 
-First, look up the SRR number of the .fastq file you want to download. Let's pick the first on this SRA Run Selector page.
+First, look up the SRR number of the .fastq file you want to download. Let's pick the first sample on this SRA Run Selector page.
 
 <p align="center">
-<img width="700" alt="SRA" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/SRA.png">
+<img width="60%" alt="SRA" src="../../05_images/SRA.png">
 </p>
 
-It's SRR5832182.
+The first sample is `SRR5832182`.
 
-**!!! Exercise:** Let's do this together
+:hammer_and_wrench: **Group Exercise:** Follow along:
 
+  * Create a new directory within your scratch space (`/scratch/alpine/<eID>@colostate.edu/DSCI512/`) called `test_download`
+
+```bash
+mkdir test_download
+cd test_download
 ```
-$ mkdir test_download   # Create anew directory within /scratch/alpine/<eID>@colostate.edu/DSCI512/
-$ cd test_download      # Navigate into that directory
-$ fasterq-dump -e 1 --split-files --progress SRR5832182 # Execute this line of code to download one sample (2x files). This took me 5 minutes for two 1.8 GB files.
+
+  * Download the first sample called `SRR5832182`
+
+```bash
+$ fasterq-dump -e 1 --split-files --progress SRR5832182 
+
+# This took me 1 minutes for two 1.8 GB files.
+
 spots read      : 5,357,669
 reads read      : 10,715,338
 reads written   : 10,715,338
- 
-$ vdb-validate SRR5832182   # check that the files are intact and weren't corrupted during transit.
-2025-11-16T11:43:01 vdb-validate.2.11.0 info: Validating '/scratch/alpine/jesshill@colostate.edu/ncbi/sra/SRR5832182.sra'...
-2025-11-16T11:43:01 vdb-validate.2.11.0 info: Table 'SRR5832182.sra' metadata: md5 ok
-2025-11-16T11:43:01 vdb-validate.2.11.0 info: Column 'ALTREAD': checksums ok
-2025-11-16T11:43:02 vdb-validate.2.11.0 info: Column 'QUALITY': checksums ok
-2025-11-16T11:43:02 vdb-validate.2.11.0 info: Column 'READ': checksums ok
-2025-11-16T11:43:02 vdb-validate.2.11.0 info: Column 'X': checksums ok
-2025-11-16T11:43:02 vdb-validate.2.11.0 info: Column 'Y': checksums ok
-2025-11-16T11:43:02 vdb-validate.2.11.0 info: Table 'SRR5832182.sra' is consistent
- 
+```
+
+  * What just happened?
+
+```
+USAGE:  
+  fasterq-dump [options] <SRA-SAMPLE#>
+
+OPTIONS:
+  -e <#>          How many threads to use? Default = 6
+  --split-files   Download two files, R1 and R2
+  --progress      Print out progress text
+```
+
+  * Check that the files are intact and weren't corrupted during transit.
+
+```bash
+$ vdb-validate SRR5832182
+
+2026-11-16T22:52:54 vdb-validate.3.0.0 info: Validating '/scratch/alpine/erinnish@colostate.edu/sra/sra/SRR5832182.sra'...
+2026-11-16T22:52:54 vdb-validate.3.0.0 info: Table 'SRR5832182.sra' metadata: md5 ok
+2026-11-16T22:52:54 vdb-validate.3.0.0 info: Column 'ALTREAD': checksums ok
+2026-11-16T22:52:58 vdb-validate.3.0.0 info: Column 'QUALITY': checksums ok
+2026-11-16T22:53:04 vdb-validate.3.0.0 info: Column 'READ': checksums ok
+2026-11-16T22:53:04 vdb-validate.3.0.0 info: Column 'X': checksums ok
+2026-11-16T22:53:04 vdb-validate.3.0.0 info: Column 'Y': checksums ok
+2026-11-16T22:53:04 vdb-validate.3.0.0 info: Table 'SRR5832182.sra' is consistent
+
 $ ls
 SRR5832182_1.fastq  SRR5832182_2.fastq
 ```
 
-The line **vdb-validate** automates the process of checking **md5-sums**
+**vdb-validate** checks **md5-sums**
 
-**!! Common pitfall:** the number one reason vdb-validate doesn't come out ok - Error on SRA's side. So stay calm.
+> [!WARNING]
+> The number one reason vdb-validate doesn't check out OK is an error on SRA's side. So stay calm.
 
-## Start a downloads project
+-----
 
-**!!! Exercise:** Let's download all the files!
+## Download all the files in batch
 
 To do this, we can AUTOMATE the process of pulling .fastq files using **fasterq-dump**. Let's do the following...
 
@@ -103,21 +135,21 @@ To do this, we can AUTOMATE the process of pulling .fastq files using **fasterq-
 3. Obtain a looped script to automate the download
 4. Download!
 
-**1. Set up a folder to download the files into**
+### Step 1. Set up a folder
 
-```
-# Let's go here...
+```bash
+# Let's download the files into our 01_input directory...
  
-$ cd /scratch/alpine/<eID>@colostate.edu # Replace this with your eID
+$ cd /scratch/alpine/<eID>@colostate.edu     # Replace this with your eID
 $ cd DSCI512
-$ cd PROJ01_GomezOrte # If you have this directory, navigate into it. If you don't have this, go ahead and create it with mkdir
+$ cd PROJ01_GomezOrte                        # If you have this directory, navigate into it. If you don't have this, go ahead and create it with mkdir
 $ cd 01_input
 ```
 
-**2. Obtain a list of SRR files you want to download from the SRA page**
+### Step 2. Obtain a list of SRR files you want to download from the SRA page
 
 <p align="center">
-<img width="700" alt="SRA pic2" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/SRA_pic2.jpg">
+<img width="70%" alt="SRA pic2" src="../../05_images/SRA_pic2.jpg">
 </p>
 
 - Navigate to the Gomez Orte SRA page.
@@ -126,7 +158,7 @@ $ cd 01_input
 - Open the file
 - Copy and paste the contents of that file into a new file on ALPINE called `SRR_Acc_List_GomezOrte.txt` (you can use nano to do this).
 
-```
+```bash
 $ more SRR_Acc_List_GomezOrte.txt
 SRR5832182
 SRR5832183
