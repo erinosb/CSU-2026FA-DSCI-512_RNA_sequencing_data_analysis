@@ -41,7 +41,7 @@ We use the **job scheduler** called **SLURM** to assign jobs to the compute node
 
 # Quick SLURM Overview 
 
-The job sharing utility that is installed on ALPINE is called **SLURM** and we use it by writing and executing **batch scripts**. Batch scripts are just specialized bash scripts that are executed using the command `sbatch`. Batch scripts do everything that bash scripts do, but in addition, **they request a certain amount of the supercomputer for use and request a certain amount of time on that hardware**. 
+**SLURM** is a software that allows multiple users to share resources. We submit jobs to slurm using **batch scripts**. Batch scripts are just specialized bash scripts that are executed using the command `sbatch`. Batch scripts do everything that bash scripts do, but in addition, **they request a certain amount of the supercomputer hardware for a certain amount of time**. 
 
 When we execute batch scripts, they don't run right away. Instead, they get in the queue and are assigned to a node based on the requested hardware, requested time, and availability.
 
