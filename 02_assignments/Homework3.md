@@ -15,7 +15,6 @@ Use the files you plan to use in your Exam Project to create a metadata file. Th
   * You can write it in Excel and then export it. Or, you can do it in a text editor.
   * Create a Metadata file as a tab-delimited .txt file for your dataset.
   * The Metadata document should be in the form:
-  * Write down your metadata file's name and how you constructed it in your Computational Lab Notebook
 
 | Column | Contents | Example |
 | ------ | -------- | ------- |
@@ -52,6 +51,9 @@ SRR5832198_1.fastq      SRR5832198_2.fastq      EG17    17_Bsubtilis_25_2       
 SRR5832199_1.fastq      SRR5832199_2.fastq      EG18    18_Bsubtilis_25_3       Bsubtilis       25      3
 ```
 
+  * Write down your metadata file's name and how you constructed it in your Computational Lab Notebook
+
 ## Turn it in:
 
-Turn in your metadata file as a .txt file to canvas
+
+  * Turn in your metadata file as a .txt file to canvas
