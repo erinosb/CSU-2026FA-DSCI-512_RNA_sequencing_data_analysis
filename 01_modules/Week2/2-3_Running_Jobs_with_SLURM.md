@@ -37,7 +37,7 @@
 
 **How can we assign jobs to compute nodes?**
   
-  * We will use the **job scheduler** called **SLURM** to assign jobs to the compute nodes. A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes.
+  * We will use the **job scheduler** called **SLURM** to assign jobs to the compute nodes. A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to compute nodes.
 
 
 ----- 
@@ -264,13 +264,13 @@ This run takes advantage of a full node but may take a while to start.
 A note about intensive runs: 
 
 - **acpu** nodes have either 32, 64, or 128 cores. However, there aren't many with 128 cores, so if you run a job with `–nodes=1 and –ntasks=128` you will need to wait until that resource is available. It might be a long wait
-- Try requesting **apcu** nodes with a max of 32 ntasks for best performance
-- The max time you can request in 24 hours
-- If you're waiting for your job to start and want to get an estimate of when it will start, try your `sa` command alias
+- I try not to request more than 32 ntasks
+- The max time you can request is 24 hours
+- If you're waiting for your job to start and want to get an estimate of when it will start, try your `sa` command alias. However, it lies!
 
 ## The tester run
 
-This will run right away and is great for testing if things work. (Remember: Max nodes for a testing run = 2; Max cores for a testing run = 8 per node; Max time is 30 min)
+This will run right away and is great for testing if things work. (Remember: Max nodes for a testing run = 2; Max ntasks for a testing run is 8 per node; Max time is 30 min)
 
 ```
 #!/usr/bin/env bash
