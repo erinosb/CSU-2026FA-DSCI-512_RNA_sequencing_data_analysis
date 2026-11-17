@@ -13,10 +13,9 @@
 
 [Week2](Week2)
 
-  * [The Project and the Pipeline](Week2/2-1_The_Project-The_Pipeline.md)
-  * [Installing Software 2](Week2/2-2_Installing_Software_2_SRAtoolkit.md)
-  * [Project Initiation](Week2/2-3_Project_Initiation.md)
-  * [Running Jobs with Slurm](Week2/2-4_Running_Jobs_with_SLURM.md)
+  * [The Project and the Pipeline](Week2/2-1_The_Project.md)
+  * [Project Initiation](Week2/2-2_Project_Initiation.md)
+  * [Running Jobs with Slurm](Week2/2-3_Running_Jobs_with_SLURM.md)
   * [Data Acquisition](Week2/2-4_Data_Acquisition.md)
   * [The Pipeline](Week2/2-5_Pipeline.md)
   * [Building Indexes](Week2/2-6_Building_Indexes.md)
