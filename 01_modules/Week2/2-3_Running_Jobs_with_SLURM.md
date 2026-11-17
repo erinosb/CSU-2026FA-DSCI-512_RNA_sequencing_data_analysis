@@ -28,7 +28,7 @@
 
 ----
 
-## Best Practices:
+## Best Practices
 
   - Don't run jobs on the **login node!**
   - **Compile nodes** are for small jobs, testing, and software installation
@@ -289,16 +289,16 @@ sleep 30
 
 # Frequently Asked SLURM Questions
 
-### How much time and ntasks do I pick?
+**How much time and ntasks do I pick?**
 
   * This is part of the art of coding. Try doing a small task first, see how quickly it runs, then scale up accordingly.
   * The more resources you request, the longer it will take your job to start
 
-### When will my job start?
+**When will my job start?**
 
   * You can try: `squeue --user=$USER --start`
 
-### If I close my computer, is my job still running? 
+**If I close my computer, is my job still running?**
 
   * Yes
 
