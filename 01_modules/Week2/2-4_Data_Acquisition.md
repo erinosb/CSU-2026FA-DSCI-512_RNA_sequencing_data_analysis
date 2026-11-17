@@ -263,7 +263,7 @@ $ sbatch automateSRA_wLoops.sbatch SRR_Acc_List_GomezOrte.txt
 
 **ARRAYS:** let us download each sample in parallel. All the downloads begin at the same time. We probably don't need as many tasks per download, so let's go with 4 tasks and it takes 10 minutes to download each sample. The entire job will take 10 minutes. However, this job may take longer to start
 
-Copy and paste this following short script into the same directory and call it `automateSRA.sbatch`.
+Copy and paste this following short script called `automateSRA.sbatch` into your `02_scripts` directory
 
 ```bash
 #!/usr/bin/env bash
@@ -276,7 +276,7 @@ Copy and paste this following short script into the same directory and call it `
 #SBATCH --output=log-download-%A.%a.out
  
 # Execute code with: $ sbatch --array=1-n automateSRA.sbatch <file>
-# Make sure that in --array=0-n, the number n matches the number of lines in <file>
+# Make sure that in --array=0-n, the number n matches the number of lines in <file>. It should be 1 less than the number of files. 
 # The format of <file> is a list of SRR#s with each SRR# on its own line.
  
 # Read input file containing SRR accessions.
@@ -285,19 +285,19 @@ Copy and paste this following short script into the same directory and call it `
 #   ARR[1] = second line (SRR#) 
 myinfile=$1
 ARR=($(cat $myinfile))
-#
+
 # Select the SRR accession for this SLURM array task.
 # $SLURM_ARRAY_TASK_ID determines which line to process. 
 line=${ARR[ $SLURM_ARRAY_TASK_ID ]}
 echo -e $line
-#
+
 # Download FASTQ files using fasterq-dump:
 #   -e $SLURM_NTASKS : number of threads
 #   --split-files   : outputs *_1.fastq and *_2.fastq for paired-end
 echo "fasterq-dump -e $SLURM_NTASKS --split-files $line"
 time fasterq-dump -e $SLURM_NTASKS --split-files -O ../01_input/ $line         # The -O <out/put/dir> specifies where to save the .fastq files 
-time fasterq-dump -e $SLURM_NTASKS --split-files $line
-#
+# time fasterq-dump -e $SLURM_NTASKS --split-files $line
+
 # Validate the downloaded SRA data for integrity.
 echo "vdb-validate $line"
 vdb-validate $line
