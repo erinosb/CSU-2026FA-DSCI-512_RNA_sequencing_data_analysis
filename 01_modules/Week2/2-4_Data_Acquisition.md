@@ -188,7 +188,7 @@ SRR5832199
 
 There are two ways to automate downloading: Loops and Arrays
 
-**Loops** structure will let us execute each sample download in series. When the first sample completes, the the next will follow. You can use a `while`, `for`, or `while read` loop structure. Because of the way fasterq-dump is written, we can use multiple tasks for this process, improving its efficiency. 
+**Loops** structure will let us execute each sample download in series. We can use multiple ntasks for this process, improving its efficiency. 
 
 If each file takes 4 minutes to download using 12 tasks, the whole dataset will take (4 min x 18 samples) 72 minutes, or an hour and 12 minutes.
 
