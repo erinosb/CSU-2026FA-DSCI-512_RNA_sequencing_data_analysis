@@ -54,6 +54,8 @@ Let's test that sra-tools is working
 fasterq-dump #test that it works.  You should see instructions
 ```
 
+If your computer does not find this command, do `module load sra-toolkit`, then try again.
+
 ---- 
 
 ## Download a single file
@@ -381,4 +383,4 @@ Quality scoring range:
 
 Each possible quality score is encoded by an individual character. [This is the code table](https://www.drive5.com/usearch/manual/quality_score.html)
 
-Continue on to [Pre-Processing & QC](2_7_Pre-processing_and_QC.md) 
+Continue on to [2-5 The Pipeline](2-5_Pipeline.md) 
