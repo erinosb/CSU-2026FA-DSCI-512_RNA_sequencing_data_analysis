@@ -56,13 +56,12 @@ When we execute batch scripts, they don't run right away. Instead, they get in t
 - First, navigate to the space `/scratch/alpine/$USER`
 - Let's make a new directory called `test_slurm`
 - `cd` into the `test_slurm` sub-directory
-- Next, let's make a practice shell script.
-- Start a file called `testscript.sh` using `touch` or `nano`.
-- Open `testscript.sh` by navigating to DASHBOARD, FILES, and editing the file. OR you can use nano.
 
-## Running a bash script
+## Running a bash script - demonstration
 
-Coopy the following into `testscript.sh`
+**Just watch**
+
+Imagine the script `testscript.sh`
 
 ```bash
 #!/usr/bin/env bash
@@ -82,7 +81,7 @@ $ bash testscript.sh
 The script prints Hello, waits 30 seconds, then prints world, then waits 30 seconds.
 
 
-## Running an sbatch script
+## Running an batch script
 
 To run jobs using SLURM, we take a typical `.sh` script and convert it to an `.sbatch` script. To turn a bash script into an sbatch script we just need to do a few things...
 
@@ -114,13 +113,9 @@ echo "world"
 sleep 30
 ```
 
-:hammer_and_wrench: **GROUP EXERCISE** FCopy the `.sh` script into an `.sbatch` script called `testscript.sbatch`
+:hammer_and_wrench: **GROUP EXERCISE** Start a script called `testscript.sbatch`
 
-```bash
-$ cp testscript.sh testscript.sbatch
-```
-
-:hammer_and_wrench: **GROUP EXERCISE** Open `testscript.sbatch` in a text editor and convert it to an `.sbatch` script by adding the following directives:
+:hammer_and_wrench: **GROUP EXERCISE** Open `testscript.sbatch` in a text editor and copy and paste the script below
 
 ```bash
 #!/usr/bin/env bash
@@ -131,9 +126,6 @@ $ cp testscript.sh testscript.sbatch
 #SBATCH --partition=acpu
 #SBATCH --qos=cpu-testing
 #SBATCH --output=sample-%j.out
- 
-## Software is loaded here...
-module purge
  
 ## Code
 echo "hello"
@@ -153,11 +145,11 @@ Use the following commands to interact with the progress of your script:
 ```bash
 $ squeue -u $USER      # to see all the scripts you, the user, are running
 $ sacct -u $USER       # See some stats about running or previously run jobs
-$ sacct -X --format JobID, JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Submit,Start,End  # A nicely formatted status output
+$ sacct -X --format JobID,JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Submit,Start,End  # A nicely formatted status output
 $ scancel <jobID#>     # to cancel a script
 ```
 
-Do you see a log file that was created? Peek into it to explore it.
+Do you see a log files that were created? Peek into them. Do you see .fastq files?
 
 :question: What just happened? 
 
