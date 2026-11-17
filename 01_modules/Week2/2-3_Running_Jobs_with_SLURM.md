@@ -213,9 +213,9 @@ $ source .bashrc
 
 Now test your new aliases: 
 
-```
-$ scheck
-$ sa
+```bash
+scheck
+sa
 ```
 
 :hammer_and_wrench: **INDEPENDENT PRACTICE EXERCISE** Try running `testscript.sbatch` again, this time with your new command aliases!
@@ -224,7 +224,7 @@ $ sa
 
 # Hackable sbatch scripts
 
-The example script above is great for a nice short, quick run. It's capabilities will be similar to a laptop but allow for a 2 hour job to complete.
+Here are some directives you can use in your own .sbatch scripts!
 
 ## A typical run
 
@@ -260,7 +260,7 @@ This run takes advantage of a full node but may take a while to start.
 <code goes here>
 ```
 
-Real runs or intensive runs: 
+A note about intensive runs: 
 
 - **acpu** nodes have either 32, 64, or 128 cores. However, there aren't many with 128 cores, so if you run a job with `–nodes=1 and –ntasks=128` you will need to wait until that resource is available. It might be a long wait
 - Try requesting **apcu** nodes with a max of 32 ntasks for best performance
@@ -269,7 +269,7 @@ Real runs or intensive runs:
 
 ## The tester run
 
-This will run right away and is great for testing if things work. (Remember: Max nodes for a testing run = 2; Max processes for a testing run = 24 total; Max time is 30 min)
+This will run right away and is great for testing if things work. (Remember: Max nodes for a testing run = 2; Max cores for a testing run = 8 per node; Max time is 30 min)
 
 ```
 #!/usr/bin/env bash
@@ -281,10 +281,7 @@ This will run right away and is great for testing if things work. (Remember: Max
 #SBATCH --qos=cpu-testing
 #SBATCH --output=log-download-%j.out
  
-echo "hello"
-sleep 30
-echo "world"
-sleep 30
+<code goes here>>
 ```
 
 -----
