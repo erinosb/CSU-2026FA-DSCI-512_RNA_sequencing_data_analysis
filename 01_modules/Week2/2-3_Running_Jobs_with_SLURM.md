@@ -39,6 +39,12 @@ We use the **job scheduler** called **SLURM** to assign jobs to the compute node
 
 ----- 
 
+<p align="center">
+<img width="40%" alt="slum_logo" src="../../05_images/Slurm_logo.jpb">
+</p>
+
+
+
 # Quick SLURM Overview 
 
 **SLURM** is a software that allows multiple users to share resources. We submit jobs to slurm using **batch scripts**. Batch scripts are just specialized bash scripts that are executed using the command `sbatch`. Batch scripts do everything that bash scripts do, but in addition, **they request a certain amount of the supercomputer hardware for a certain amount of time**. 
