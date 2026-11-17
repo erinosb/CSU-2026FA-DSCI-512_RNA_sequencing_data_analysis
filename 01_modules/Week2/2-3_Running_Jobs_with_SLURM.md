@@ -40,7 +40,7 @@ We use the **job scheduler** called **SLURM** to assign jobs to the compute node
 ----- 
 
 <p align="center">
-<img width="30%" alt="slum_logo" src="../../05_images/Slurm_logo.webp">
+<img width="20%" alt="slum_logo" src="../../05_images/Slurm_logo.webp">
 </p>
 
 
