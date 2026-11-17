@@ -306,7 +306,7 @@ vdb-validate $line
 Now, just execute the program like so... 
 
 ```
-$ sbatch --array=0-17 automateSRA.sbatch SRR_Acc_List_GomezOrte.txt 
+$ sbatch --array=0-17 automateSRA.sbatch ../01_input/SRR_Acc_List_GomezOrte.txt
 ```
 
   * Note, the number of arrays will be 0-m in which m = [# of samples] - 1
