@@ -305,7 +305,7 @@ This will run right away and is great for testing if things work. (Remember: Max
 [More FREQUENTLY ASKED QUESTIONS](https://curc.readthedocs.io/en/latest/getting_started/faq.html)
 
 
-Continue on to [Overview of R](2_5_Overview_of_R.md) 
+Continue on to [Data Acquisition](2-4_Data_Acquisition.md) 
 
 
 
