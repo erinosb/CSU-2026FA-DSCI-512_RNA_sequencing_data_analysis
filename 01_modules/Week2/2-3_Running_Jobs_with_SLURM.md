@@ -31,7 +31,7 @@
 ## Best Practices:
 
   - Don't run jobs on the **login node!**
-  - **Compile nodes** arefor small jobs, testing, and software installation
+  - **Compile nodes** are for small jobs, testing, and software installation
   - **Compute nodes** are for all your big jobs
 
 We use the **job scheduler** called **SLURM** to assign jobs to the compute nodes. A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes.
