@@ -121,7 +121,7 @@ SRR5832199_1.fastq	SRR5832199_2.fastq	EG18	18_Bsubtilis_25_3	Bsubtilis	25	3
 > [!NOTE]
 > If you only have one condition (strain, for example), you won't need column # 6.
 
-  * The key to our automation strategy is that we will loop over each row and parse each sample through a series of stereotyped commands.
-  * For Homework3, you will be asked to make your own metadata file. Follow the instructions on how to make it. Creating it in excel and then exporting it as a tab-delimited-text-file is a great way to go.
+
+For Homework3, you will be asked to make your own metadata file. Follow the instructions on how to make it. Creating it in excel and then exporting it as a tab-delimited-text-file is a great way to go.
 
 Continue on to [2-6 Building Genome Indexes ](2-6_Building_Indexes.md) 
