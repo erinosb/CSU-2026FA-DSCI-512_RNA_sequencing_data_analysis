@@ -295,7 +295,8 @@ This will run right away and is great for testing if things work. (Remember: Max
 
 **When will my job start?**
 
-  * You can try: `squeue --user=$USER --start`
+  * Use your `sa` code 
+  * Keep in mind - ALPINE often lies
 
 **If I close my computer, is my job still running?**
 
