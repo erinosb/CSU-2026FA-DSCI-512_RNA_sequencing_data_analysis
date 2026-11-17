@@ -63,4 +63,4 @@ Notice what goes in and what comes out:
   * **Output:** Pretty browser shots
   * **Output:** Plots
 
-Continue on to [2-6 The Pipeline](2-6_Building_Indexes.md) 
+Continue on to [2-6 Building Genome Indexes ](2-6_Building_Indexes.md) 
