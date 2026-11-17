@@ -9,7 +9,7 @@
 - Research Computing at Boulder - [Guide to running batch jobs](https://curc.readthedocs.io/en/latest/running-jobs/batch-jobs.html)
 - Research Computing at Boulder - [Guide to SLRUM directives](https://curc.readthedocs.io/en/latest/running-jobs/job-resources.html)
 - Research Computing at Boulder - [Alpine Hardware](https://curc.readthedocs.io/en/latest/clusters/alpine/alpine-hardware.html)
-- SCHEDMD - [Guide to SLURM](https://slurm.schedmd.com/reservations.html#:~:text=Reservation%20Use&text=This%20name%20is%20automatically%20generated,completely%20within%20the%20named%20reservation.)
+- SLURM - [Guide to SLURM](https://slurm.schedmd.com/reservations.html#:~:text=Reservation%20Use&text=This%20name%20is%20automatically%20generated,completely%20within%20the%20named%20reservation.)
 
 ## A review of vocabulary words
 
@@ -19,8 +19,9 @@
 - **Nodes** are the individual, small computing units of which a supercomputer is comprised. Individual nodes are like mini-computers, each with its own CPUs, memory, and a bit of storage space.
   - **Login Node**
   - **Compile Node**
-  - **Types of Compute Nodes:** Compute nodes are the nodes on the ALPINE system where we run jobs. They come in a few different types: **GPU** (graphical processing units), **HighMEM** (high memory nodes), and **AMD CPUs** (typical, garden-variety, CPU). There are currently 424 AMD CPUs
-  - **Node design:** Each compute node can support multiple tasks. These tasks are referred to as either **processes** or **threads** or **cores**. This is similar to having a quad-CPU in your laptop that can support 4x processes at a time. Most AMD CPU Nodes on ALPINE can support between 32 - 64 processes, and 33 of them can support 128 processes at a time.
+  - **Compute Nodes:** 
+    - **Types of Compute nodes** Compute nodes are the nodes on the ALPINE system where we run jobs. They come in a few different types: **GPU** (graphical processing units), **HighMEM** (high memory nodes), and **AMD CPUs** (typical, garden-variety, CPU). There are currently 424 AMD CPUs
+  - **Node design:** Each compute node can support multiple tasks. These tasks are referred to as either **processes** or **threads** or **cores** or **ntasks**. This is similar to having a quad-CPU in your laptop that can support 4x processes at a time. Most AMD CPU Nodes on ALPINE can support between 32 - 64 processes, and 33 of them can support 128 processes at a time.
 
 <p align="center">
 <img width="60%" alt="alpine map" src="../../05_images/alpineMap.png">
@@ -32,9 +33,9 @@
 
   - Don't run jobs on the **login node!**
   - **Compile nodes** are for small jobs, testing, and software installation
-  - **Compute nodes** are for all your big jobs
+  - **Compute nodes** are for running your jobs
 
-How can we assign jobs to compute nodes?
+**How can we assign jobs to compute nodes?**
   
   * We will use the **job scheduler** called **SLURM** to assign jobs to the compute nodes. A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes.
 
