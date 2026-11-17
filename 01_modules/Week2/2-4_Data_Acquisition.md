@@ -10,7 +10,7 @@ Data for different projects are stored/housed in repositories. The most common r
 
 Not every project uses the NCBI repositories. Individual projects (NASA, ENCODE, etc) sometimes design their own repositories as part of their research project.
 
-When you publish your own RNA-seq data, you will be required by the journal to deposit all your data in a repository, sometimes prior to submitting the manuscript for review. You can submit the data to the repository in an **embargoed** format. That is, the data will be hidden and password protected so that manuscript reviewers can access it, and then the password protection will be lifted once the manuscript is published.
+When you publish your own RNA-seq data, you will be required by the journal to deposit all your data in a repository, prior to submitting the manuscript for review. You can submit the data to the repository in an **embargoed** format. That is, the data will be hidden and password protected so that manuscript reviewers can access it, and then the password protection will be lifted once the manuscript is published.
 
 - It is your responsibility as an author to upload the data to the repository and provide the **reviewer link** to the journal when you submit your manuscript.
 - It is your responsibility as the author to contact NCBI when your paper is **published** and assist them in lifting the embargo and linking the repository to the published work.
@@ -54,7 +54,7 @@ Let's test that sra-tools is working
 fasterq-dump #test that it works.  You should see instructions
 ```
 
-If your computer does not find this command, do `module load sra-toolkit`, then try again.
+If your computer does show the instructions, do `module load sra-toolkit`, then try again.
 
 ---- 
 
@@ -182,6 +182,8 @@ SRR5832198
 SRR5832199
 ```
 
+-----
+
 # Option 1: Batch download with a LOOP 
 
 There are two ways to automate downloading: Loops and Arrays
@@ -254,6 +256,8 @@ $ sbatch automateSRA_wLoops.sbatch SRR_Acc_List_GomezOrte.txt
 ---
 
 </details>
+
+-----
 
 # Option 2: Batch download with an ARRAY 
 
