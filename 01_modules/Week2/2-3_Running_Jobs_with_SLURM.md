@@ -161,10 +161,10 @@ Everything after an `#SBATCH` is a **SLURM directive**. Think of these like **op
 
 ```bash
 #SBATCH --nodes=1   <-- Requests 1 node
-#SBATCH --ntasks=1  <-- Requests 1 core (can be up to 64 per single node)
+#SBATCH --ntasks=1  <-- Requests 1 core (select up to 32-128 per single CPU node)
 #SBATCH --time=0:1:30   <-- Requests 1 minute & 30 seconds of time. Job will stop then
-#SBATCH --partition=acpu  <-- Requests a "testing partition"
-#SBATCH --qos=cpu-testing  <-- Used for all testing partitions
+#SBATCH --partition=acpu  <-- Requests a CPU node
+#SBATCH --qos=cpu-testing  <-- Used for testing purposes & starts early. Limits you to 8 cores
 #SBATCH --output=sample-%j.out <-- saves the output in a file named sample-%j.out where %j is a variable where the job number will output
 ```
 
@@ -198,7 +198,6 @@ Copy and paste the following lines of code to the end of the `.bashrc` file:
 #Alises
 alias scheck="squeue -u $USER"
 alias sa='sacct -X --format JobID,JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Submit,Start,End'
-alias suser="sacct -u $USER"
 ```
 
 - Save the file
@@ -215,7 +214,6 @@ Now test your new aliases:
 ```
 $ scheck
 $ sa
-$ suserc
 ```
 
 :hammer_and_wrench: **INDEPENDENT PRACTICE EXERCISE** Try running `testscript.sbatch` again, this time with your new command aliases!
@@ -228,34 +226,42 @@ The example script above is great for a nice short, quick run. It's capabilities
 
 ## A typical run
 
-
-
-## The intensive run
-
-This run takes advantage of a full node but may take a while to start. (Remember: Max cores per Haswell node = 24; Max time = 24 hours)
-
-```
+```bash
 #!/usr/bin/env bash
  
 #SBATCH --nodes=1
-#SBATCH --ntasks=24
+#SBATCH --ntasks=4
+#SBATCH --time=00:20:00
+#SBATCH --partition=acpu
+#SBATCH --qos=cpu-normal
+#SBATCH --output=log-download-%A.%a.out
+
+<code goes here>
+```
+
+## The intensive run
+
+This run takes advantage of a full node but may take a while to start. 
+
+```bash
+#!/usr/bin/env bash
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=32
 #SBATCH --time=12:00:00
-#SBATCH --partition=amilan
-#SBATCH --qos=normal
+#SBATCH --partition=acpu
+#SBATCH --qos=cpu-normal
 #SBATCH --mail-type=end
 #SBATCH --mail-user=tstark@colostate.edu # replace this with your own e-mail to receive an e-mail update when this job is complete
 #SBATCH --output=log-download-%j.out
  
-echo "hello"
-sleep 30
-echo "world"
-sleep 30
+<code goes here>
 ```
 
 Real runs or intensive runs: 
 
-- **amilan** nodes have either 32, 48, or 64 cores. However, there aren't many with 64 cores, so if you run a job with `–nodes=1 and –ntasks=64` you will need to wait until that resource is available. It might be a long wait
-- Try requesting **amilan** nodes with a max of 32 ntasks for best performance
+- **acpu** nodes have either 32, 64, or 128 cores. However, there aren't many with 128 cores, so if you run a job with `–nodes=1 and –ntasks=128` you will need to wait until that resource is available. It might be a long wait
+- Try requesting **apcu** nodes with a max of 32 ntasks for best performance
 - The max time you can request in 24 hours
 - If you're waiting for your job to start and want to get an estimate of when it will start, try your `sa` command alias
 
@@ -269,8 +275,8 @@ This will run right away and is great for testing if things work. (Remember: Max
 #SBATCH --nodes=1
 #SBATCH --ntasks=2
 #SBATCH --time=00:10:00
-#SBATCH --partition=atesting
-#SBATCH --qos=testing
+#SBATCH --partition=apcu
+#SBATCH --qos=cpu-testing
 #SBATCH --output=log-download-%j.out
  
 echo "hello"
