@@ -71,6 +71,8 @@ Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your
   * Next flow: [nf-core RNA-seq](https://nf-co.re/rnaseq/3.14.0/)
   * Snakemake: [VIPER: RNA-seq Pipeline](https://pmc.ncbi.nlm.nih.gov/articles/PMC5897949/)
 
+-----
+
 # The Metadata File
 
 The Metadata file is a key file within a project that lists the attributes of each sample. This file is used to standardize different steps of the pipeline and to guard against errors.
