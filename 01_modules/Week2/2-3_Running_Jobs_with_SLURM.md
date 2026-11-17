@@ -34,7 +34,9 @@
   - **Compile nodes** are for small jobs, testing, and software installation
   - **Compute nodes** are for all your big jobs
 
-We use the **job scheduler** called **SLURM** to assign jobs to the compute nodes. A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes.
+How can we assign jobs to compute nodes?
+  
+  * We will use the **job scheduler** called **SLURM** to assign jobs to the compute nodes. A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes.
 
 
 ----- 
