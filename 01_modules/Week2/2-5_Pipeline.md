@@ -10,7 +10,7 @@ A **pipeline** is series of data processing operations in which the output of on
 <img width="80%" alt="pipeline" src="../../05_images/pipeline.jpg">
 </p>
 
-For RNA-seq, our data analysis goals are:
+## A Typical RNA-Seq Data Analysis Pipeline
 
   1. Align sequenced fragments (called reads) to the genome
   2. Quantify the number of reads associated with each gene
@@ -21,5 +21,11 @@ For RNA-seq, our data analysis goals are:
 <img width="80%" alt="RNA-seq Data Analysis" src="../../05_images/data_analysis_recap.png">
 </p>
 
+Each step will involve different software. There are many options for each step:
 
+<p align="center">
+ <img width="90%" alt="software for RNA-seq" src="../../05_images/StarkEtAl_Fig.png">
+ <br>
+ <em><b>Figure:</b> Adapted from Stark et al., 2019</em>
+</p>
 
