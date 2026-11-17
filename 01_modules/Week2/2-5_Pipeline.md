@@ -18,7 +18,7 @@ For RNA-seq, our data analysis goals are:
   4. Use modeling and statistics to identify differentially expressed genes
 
 <p align="center">
-<img width="40%" alt="RNA-seq Data Analysis" src="../../05_images/data_analysis_recap.jpg">
+<img width="40%" alt="RNA-seq Data Analysis" src="../../05_images/data_analysis_recap.png">
 </p>
 
 
