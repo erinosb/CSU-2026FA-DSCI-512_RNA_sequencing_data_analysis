@@ -113,9 +113,11 @@ echo "world"
 sleep 30
 ```
 
-:hammer_and_wrench: **GROUP EXERCISE** Start a script called `testscript.sbatch`
+:hammer_and_wrench: **GROUP EXERCISE** 
 
-:hammer_and_wrench: **GROUP EXERCISE** Open `testscript.sbatch` in a text editor and copy and paste the script below
+  * Start a script called `testscript.sbatch`
+  * Open `testscript.sbatch` in a text editor
+  * Copy and paste the script below
 
 ```bash
 #!/usr/bin/env bash
