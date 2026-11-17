@@ -13,8 +13,9 @@
 
   * Be familiar with the best practices project organization (directories, documentation, versions)
   * Gain familiarity with Job Submission on an HPC system
-  * Understand that genomics data repositories archive data
-  * Learn how to download datasets from the Short Read Archive
+  * Understand the key differences between a **bash** script and a **batch** script
+  * Become familiar with how to find and navigate genomics repositories and archived data
+  * Learn how to download data from the Short Read Archive
 
 -----
 
