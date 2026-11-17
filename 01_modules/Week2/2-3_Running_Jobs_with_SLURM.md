@@ -104,7 +104,7 @@ Sbatch scripts look like so...
 #SBATCH <SLURM commands>
 #SBATCH <SLURM commands>
  
-## Software is loaded here...
+## Optional software is loaded here...
 module purge
 module load <desired software>
  
@@ -138,13 +138,13 @@ echo "world"
 sleep 30
 ```
 
-Submit this script to the SLURM job scheduler using this command:
+  * Submit this script to the SLURM job scheduler using this command:
 
 ```bash
 $ sbatch testscript.sbatch
 ```
 
-Use the following commands to interact with the progress of your script:
+  * Use the following commands to interact with the progress of your script:
 
 ```bash
 $ squeue -u $USER      # to see all the scripts you, the user, are running
@@ -153,7 +153,7 @@ $ sacct -X --format JobID,JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Sub
 $ scancel <jobID#>     # to cancel a script
 ```
 
-Do you see a log files that were created? Peek into them. Do you see .fastq files?
+  * Do you see a log files that were created? Peek into them. Do you see .fastq files?
 
 :question: What just happened? 
 
