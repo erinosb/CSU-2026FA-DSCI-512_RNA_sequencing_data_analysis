@@ -59,7 +59,7 @@ When we execute batch scripts, they don't run right away. Instead, they get in t
 
 ## Running a bash script - demonstration
 
-**Just watch**
+:eyes: **Just watch**
 
 Imagine the script `testscript.sh`
 
