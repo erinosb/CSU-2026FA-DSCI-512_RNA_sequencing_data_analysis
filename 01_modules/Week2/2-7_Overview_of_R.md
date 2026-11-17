@@ -1,6 +1,6 @@
 # Upcoming Homeworks 
 
-Homework assignments 2 & 3 focus on learning R via **Swirl**. They are due after fall break on **December 4th**!
+In Homework4, we will explore R via **Swirl**.
 
 ## Learning R with swirl
 

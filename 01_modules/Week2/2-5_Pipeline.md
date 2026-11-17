@@ -63,4 +63,15 @@ Notice what goes in and what comes out:
   * **Output:** Pretty browser shots
   * **Output:** Plots
 
+Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your pipeline in any language. 
+
+Don't want to write a script yourself? There are many other options:
+
+  * Next flow: [nf-core RNA-seq](https://nf-co.re/rnaseq/3.14.0/)
+  * Snakemake: [VIPER: RNA-seq Pipeline](https://pmc.ncbi.nlm.nih.gov/articles/PMC5897949/)
+
+# The Metadata File
+
+
+
 Continue on to [2-6 Building Genome Indexes ](2-6_Building_Indexes.md) 
