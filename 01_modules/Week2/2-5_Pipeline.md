@@ -121,7 +121,7 @@ Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your
   7. I saved as tab-delimited text. **File** -> **Save As...** -> **Tab-delimited text (.txt)**
   8. I opened in a text editor and double checked there weren't any extra columns or lines
 
-**Group Exercise** 
+:hammer_and_wrench: **Group Exercise** 
 
 - Navigate to `~/PROJ01_GomezOrte1/01_input`
 - Create a new file called `metadata_gomezOrte.txt`
@@ -148,7 +148,7 @@ SRR5832198_1.fastq	SRR5832198_2.fastq	EG17	17_Bsubtilis_25_2	Bsubtilis	25	2
 SRR5832199_1.fastq	SRR5832199_2.fastq	EG18	18_Bsubtilis_25_3	Bsubtilis	25	3
 ```
 
-- The Metadata document should be in the form:
+**Proper formatting: The Metadata document should be in the form:**
 
 | Column | Contents | Example |
 | --- | --- | --- |
@@ -163,7 +163,7 @@ SRR5832199_1.fastq	SRR5832199_2.fastq	EG18	18_Bsubtilis_25_3	Bsubtilis	25	3
 > [!NOTE]
 > If you only have one condition (strain, for example), you won't need column # 6.
 
-
-For Homework3, you will be asked to make your own metadata file. Follow the instructions on how to make it. Creating it in excel and then exporting it as a tab-delimited-text-file is a great way to go.
+> [!NOTE]
+> For Homework3, you will be asked to make your own metadata file.
 
 Continue on to [2-6 Building Genome Indexes ](2-6_Building_Indexes.md) 
