@@ -6,6 +6,7 @@
 
 ## References 
 
+- [NCBI Datasets Client](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/how-tos/genomes/download-genome/)
 - [HISAT2 manual](http://daehwankimlab.github.io/hisat2/manual/)
 - [UCSC Genome Browser](https://genome.ucsc.edu/)
 
