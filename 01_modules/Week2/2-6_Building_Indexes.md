@@ -189,8 +189,8 @@ Test that the code works. Execute it using:
 
 ```
 $ sbatch buildWormIndices.sbatch
-$ scheck     # test it is working
-$ more log_hisat2-build*   # read the output file created
+$ scheck                              # test it is working
+$ more log_hisat2-build*              # read the output file created
 ```
 
 **Now add some pseudocode about what we want to do**
