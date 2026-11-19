@@ -2,7 +2,7 @@
 
 # R and RStudio
 
-## MAC USERS
+## R and R Studio for MAC USERS
 
 **Install R**
 
@@ -21,7 +21,7 @@ Now that **R** is installed, you need to download and install **RStudio**.
 - Click on “Download RStudio Desktop.” (the free version)
 - Click on the version recommended for your system, or the latest Mac version, save the .dmg file on your computer, double-click it to open, and then drag and drop it to your applications folder.
 
-## PC USERS
+## R and R Studio for PC USERS
 
 **Install R**
 
