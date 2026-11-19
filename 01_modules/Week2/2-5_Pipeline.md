@@ -2,6 +2,19 @@
 <img width="90%" alt="icons" src="../../05_images/headers_pipes.jpg">
 </p>
 
+# Thursday, November 19, 2026
+
+  * Overviews of upcoming homework and reading
+  * ALPINE maintenance days - Wednesdays
+
+# Learning objectives for today
+
+  * Understand how sequence information is encoded in a .fastq file
+  * Learn the basic steps in the RNA-seq analysis pipeline and their order
+  * Understand what a metadata file is and know how you would make your own metadata files for your own projects
+  * Learn how to download a given organism's genome file and annotation file
+  * Learn what R is used for and how it is installed
+
 # What is a Pipeline?
 
 A **pipeline** is series of data processing operations in which the output of one process is the input for the next process
@@ -75,13 +88,33 @@ Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your
 
 # The Metadata File
 
-The Metadata file is a key file within a project that lists the attributes of each sample. This file is used to standardize different steps of the pipeline and to guard against errors.
+**The master list:** The Metadata file is a key file within a project that lists the attributes of each sample. Think of this as a **master file** that lists the most pertinent information for each of your samples. 
 
-The key is to use the information in the `metadata` file to instruct a series of commands to loop over each field.
+**Reproducible Research:** This file is used to standardize different steps of the pipeline and to guard against errors. The key is to use and re-use the information in the `metadata` file to instruct a series of commands to loop over each field.
+
+**Names:** A metadata file also lists names that you will use for each sample in different steps of the data analysis process. Some of these names will be short (GO01, GO01), but some of them should have a little more information so they can be added to key plots and figures and show you which sample is which (02_Ecoli_15_2).
 
 Let's create a metadata file.
 
-:hammer_and_wrench: **Group Exercise:** I made a metadata file for this project. You can copy and paste it here.
+:hammer_and_wrench: **Group Exercise:**. Follow along. 
+
+These are the steps I took to create the metadata file: 
+
+  * I navigated to [NCBI GEO: GSE101524](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE101524)
+  * Then I clicked on **SRA Run Selector** at the bottom of that page to take us to: [SRA Run Selector PRJNA394726](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA394726&o=acc_s%3Aa)
+  * I downloaded the **Metadata file**
+
+<p align="center">
+ <img width="80%" alt="our full pipeline for RNA-seq" src="../../05_images/SRA_pic2.jpg">
+</p>
+
+  * I opened this in excel using **File** -> **Import**
+  * I deleted columns I didn't need
+  * I added these columns. I compared the SRR numbers with the files I received and used `ls -1 *_1.fast` or `ls -1 *_2.fastq` to obtain the sequence files I have. 
+  * I saved as tab-delimited text. **File** -> **Save As...** -> **Tab-delimited text (.txt)
+  * I opened in a text editor and double checked there weren't any extra columns or lines
+
+**Group Exercise** 
 
 - Navigate to `~/PROJ01_GomezOrte1/01_input`
 - Create a new file called `metadata_gomezOrte.txt`

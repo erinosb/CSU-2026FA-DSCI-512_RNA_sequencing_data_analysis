@@ -275,8 +275,8 @@ Copy and paste this following short script called `automateSRA.sbatch` into your
 #SBATCH --qos=cpu-normal
 #SBATCH --output=log-download-%A.%a.out
  
-# Execute code with: $ sbatch --array=1-n automateSRA.sbatch <file>
-# Make sure that in --array=0-n, the number n matches the number of lines in <file>. It should be 1 less than the number of files. 
+# Execute code with: $ sbatch --array=0-m automateSRA.sbatch <file>
+# Make sure that in --array=0-n, the number m matches the number of lines in <file> minus one.
 # The format of <file> is a list of SRR#s with each SRR# on its own line.
  
 # Read input file containing SRR accessions.
@@ -361,7 +361,7 @@ In this format, each molecule sequenced on the sequencing instrument contains fo
 
 All the reads (tens of millions) are concatenated together in groups of 4-rows each in the .fastq file.
 
-For paired-end sequencing, two matched .fastq files are obtained. Typically, they are matched together based on their file names... `Sample1_1.fastq` & `Sample1_2.fastq`.
+For paired-end sequencing, two matched .fastq files are obtained. Typically, they are matched together based on their file names... `Sample1_R1.fastq` & `Sample1_R2.fastq`.
 
 ## Quality Scores
 
