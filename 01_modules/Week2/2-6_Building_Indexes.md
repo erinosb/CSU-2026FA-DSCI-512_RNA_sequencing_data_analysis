@@ -113,6 +113,9 @@ unzip ncbi_dataset.zip          # To unzip the folder
 md5sum -c *                     # To test if md5 sums match
 ```
 
+> [!TIP]
+> To hack this script and download your own genome, just replace <GCF_000002985.6> with your organism's RefSeq or GenBank #. 
+
 **Organizing and general housekeeeping**
 
 I like to move the .gtf file and .fna files out of the subdirectories and directly into `PROJ02_ce235IndexBuild`. This shortens their paths.
@@ -152,7 +155,7 @@ mv genomic.gtf WBcel235_annotation_genomic.gtf
 :mag_right: Check out the files you have downloaded!
 
 
-:pencil2: **Taking Notes:** Ok, now record what you did in your file YYMMDD_README_downloads.txt. You can use history. Make sure you include the download command and make mention that you checked the md5sums.
+:pencil2: **Taking Notes:** Ok, now record what you did in a readme file. You can use history. Make sure you include the download command and mention that you checked the md5sums.
 
 ----
 
