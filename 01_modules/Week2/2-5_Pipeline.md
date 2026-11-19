@@ -6,6 +6,11 @@
 
   * Overviews of upcoming homework and reading
   * ALPINE maintenance days - Wednesdays
+  * Go back to Data Acquisition
+    * Check everyone has the .fastq files
+    * Overview of .fastq file format
+
+-----
 
 # Learning objectives for today
 
@@ -14,6 +19,8 @@
   * Understand what a metadata file is and know how you would make your own metadata files for your own projects
   * Learn how to download a given organism's genome file and annotation file
   * Learn what R is used for and how it is installed
+
+-----
 
 # What is a Pipeline?
 
@@ -105,7 +112,7 @@ These are the steps I took to create the metadata file:
   * I downloaded the **Metadata file**
 
 <p align="center">
- <img width="80%" alt="our full pipeline for RNA-seq" src="../../05_images/SRA_pic2.jpg">
+ <img width="80%" alt="our full pipeline for RNA-seq" src="../../05_images/SRA_pic2.jp">
 </p>
 
   * I opened this in excel using **File** -> **Import**
