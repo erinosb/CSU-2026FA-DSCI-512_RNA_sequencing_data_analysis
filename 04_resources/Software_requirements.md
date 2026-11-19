@@ -2,7 +2,7 @@
 
 # R and RStudio
 
-## # MAC USERS
+## MAC USERS
 
 **Install R**
 
