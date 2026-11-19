@@ -225,7 +225,7 @@ $ more log_hisat2-build*              # read the output file created
 - If we look in the HISAT2 manual under the entry for **The hisat2-build indexer**, we'll find the proper usage for building genome indexes:
 
 <p align="center">
-<img width="80%" alt="hisat2 build indexes" src="../../05_images/hisat2_build.png">
+<img width="80%" alt="hisat2 build indexes" src="../../05_images/hisat2build.png">
 </p>
 
 **Usage:** hisat2-build [options] <reference_in> <ht2_base>
