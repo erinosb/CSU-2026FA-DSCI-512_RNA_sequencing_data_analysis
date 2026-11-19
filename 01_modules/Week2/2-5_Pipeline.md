@@ -95,7 +95,7 @@ Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your
 
 # The Metadata File
 
-**The master list:** Think of the metadata file like a master list of all your samples that keeps track of the conditions and names of each sample. It contains the most pertinent information for each of your samples. 
+**The master list:** Think of the metadata file like a master list that describes each samples' conditions and names. It contains the most pertinent information for each of your samples. 
 
 **Reproducible Research:** This file is used to standardize different steps of the pipeline and to guard against errors. The key is to use and re-use the information in the `metadata` file to instruct a series of commands to loop over each field.
 
