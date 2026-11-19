@@ -27,7 +27,7 @@ Please see the [Computer Requirements](04_resources/Computer_requirements.md)
 | Bonus Content | [Week1](01_modules/Week1)  |  Video Links |  |  |
 | Nov 17 | [Week2](01_modules/Week2) | The project </br> Project initiation </br> SLURM </br> Data acquisition | [Reading 1 due](02_assignments/Reading1.md) | [Homework1 due](02_assignments/Homework1.md) |
 | Nov 19 | [Week2](01_modules/Week2)  | Data acquisition (cont.) </br> The pipeline </br> Downloading Genomes </br> Building indices </br> R |  |  |
-| Bonus Content | [Week2](01_modules/Week2)  | | | |
+| Bonus Content | [Week2](01_modules/Week2)  | GFF to GTF conversion </br> R Install | | |
 | Nov 24 | Fall Break |  | | |
 | Dec 26 | Fall Break | | | |
 | Dec 1 | [Week3](01_modules/Week3) | Building indices </br> Automation 1 </br> Automation 2 | [Reading2 due](02_assignments/Reading2.md) | [Homework2 due](02_assignments/Homework2.md) </br> [Homework3 due](02_assignments/Homework3.md)|
