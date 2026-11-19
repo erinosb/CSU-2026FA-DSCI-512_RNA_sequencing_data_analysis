@@ -9,7 +9,9 @@
 - [HISAT2 manual](http://daehwankimlab.github.io/hisat2/manual/)
 - [UCSC Genome Browser](https://genome.ucsc.edu/)
 
-## Downloading the genome and building indexes
+----
+
+# Downloading the genome
 
 Because our project involves the *C. elegans* genome, we will now download the *C. elegans* genome and build **Hisat2 indexes** using it. **Hisat2 Indexes** are files that will make it possible to use the *C. elegans* genome as a reference genome in a Hisat2 alignment. This is a very common step in any NextGen sequencing alignment protocol.
 
@@ -150,14 +152,14 @@ mv genomic.gtf WBcel235_annotation_genomic.gtf
 
 **Data Exploration**
 
-
+  * Check out the files you have downloaded
 
 
 **Taking Notes:** Ok, now record what you did in your file YYMMDD_README_downloads.txt. You can use history. Make sure you include the download command and make mention that you checked the md5sums.
 
 ----
 
-## Building indexes
+# Building indexes
 
 Building indexes is computationally intensive. Let's write an .sbatch script to do it
 
@@ -320,7 +322,9 @@ Num. Splice Sites: 0
 Num. Exons: 0
 ```
 
-## Write a paths file
+----
+
+# Write a paths file
 
 When we use this index, the one thing we'll need is the path and the prefix. To make it easy for me to find this information in the future, I like to save a file called `paths.txt` that contains this information.
 
@@ -378,7 +382,7 @@ It should look something like this with `$USER` substituted as your username
 
 ---
 
-## Review
+# Review
 
 Just to review. Here is what we did:
 
