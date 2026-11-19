@@ -65,13 +65,13 @@ All of these software packages, except one, are loaded up in your conda environm
 ## Our RNA-seq Data Analysis Roadmap (short version):
 
 <p align="center">
- <img width="80%" alt="our pipeline for RNA-seq" src="../../05_images/our_pipeline_short.png">
+ <img width="70%" alt="our pipeline for RNA-seq" src="../../05_images/our_pipeline_short.png">
 </p>
 
 ## Our RNA-seq Data Analysis Roadmap (long version):
 
 <p align="center">
- <img width="80%" alt="our full pipeline for RNA-seq" src="../../05_images/our_pipeline_long.png">
+ <img width="70%" alt="our full pipeline for RNA-seq" src="../../05_images/our_pipeline_long.png">
 </p>
 
 **Notice what goes in and what comes out:**
