@@ -16,15 +16,15 @@
 Because our project involves the *C. elegans* genome, we will now download the *C. elegans* genome and build **Hisat2 indexes** using it. **Hisat2 Indexes** are files that will make it possible to use the *C. elegans* genome as a reference genome in a Hisat2 alignment. This is a very common step in any NextGen sequencing alignment protocol.
 
 To build the Hisat2 indexes, we'll need two things:
-- The genome as fasta file
-- A name for our genome that we choose
+  1. The genome as fasta file
+  2. A name for our genome that we choose
 
 > [!TIP]
 > Standardize your index build names. For this project, we will be making *C. elegans* version235 index build. So the abbreviation will be **ce235**.
 
 :hammer_and_wrench: **Group Exercise:** Build hisat2 indices 
 
-Ensure you are on ALPINE, are on the **acompile node**, and have activated your conda environment, and are in the proper folder
+  * Ensure you are on ALPINE, are on the **acompile node**, and have activated your conda environment, and are in the proper folder
 
 ```bash
 $ acompile --time=03:00:00
@@ -33,12 +33,12 @@ $ conda activate 2026dsci
 $ cd /scratch/alpine/<eID@colostate.edu>/DSCI512/
 ```
 
-Today we will use two sofware packages: 
+**Today we will use two sofware packages:**
 
   * ncbi-datasets-cli
   * hisat2
 
-Check that you have these installed:
+  * Check that you have these installed:
 
 ```bash
 conda list
@@ -77,7 +77,7 @@ conda install -c bioconda hisat2
 
 </details>
 
-**Start a new project** entitled `PROJ02_ce235IndexBuild`
+  * Start a new project** entitled `PROJ02_ce235IndexBuild`
 
 ```bash
 $ pwd 
