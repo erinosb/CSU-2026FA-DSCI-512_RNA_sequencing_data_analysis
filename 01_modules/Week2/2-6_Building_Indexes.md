@@ -222,7 +222,7 @@ $ more log_hisat2-build*              # read the output file created
 
 **Learn how to build indexes**
 
-- If we look in the HISAT2 manual under the entry for **The hisat2-build indexer**, we'll find the proper usage for building genome indexes:
+- If we look in the [HISAT2 manual](https://daehwankimlab.github.io/hisat2/manual/) under the entry for **The hisat2-build indexer**, we'll find the proper usage for building genome indexes:
 
 <p align="center">
 <img width="80%" alt="hisat2 build indexes" src="../../05_images/hisat2build.png">
@@ -278,6 +278,8 @@ hisat2-inspect -s ce235
 echo -e "\n\nINDEX-BUILD: version:"
 hisat2-build --version
 ```
+
+**Copy and paste the code into your script**
 
 **Run it!!!**
 
