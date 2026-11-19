@@ -6,6 +6,8 @@
 
   * Overviews of upcoming homework and reading
   * ALPINE maintenance days - Wednesdays
+  * Study Session - Fri 9am here
+  * Note to Erin - JupyterLab Test
   * Go back to Data Acquisition
     * Check everyone has the .fastq files
     * Overview of .fastq file format
