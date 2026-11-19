@@ -105,23 +105,21 @@ Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your
 
 **Let's create a metadata file**
 
-:hammer_and_wrench: **Group Exercise:**. Follow along. 
+:eyes: **Watch:** These are the steps I took to create the metadata file
 
-These are the steps I took to create the metadata file: 
-
-  * I navigated to [NCBI GEO: GSE101524](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE101524)
-  * Then I clicked on **SRA Run Selector** at the bottom of that page to take us to: [SRA Run Selector PRJNA394726](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA394726&o=acc_s%3Aa)
-  * I downloaded the **Metadata file**
+  1. I navigated to [NCBI GEO: GSE101524](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE101524)
+  2. Then I clicked on **SRA Run Selector** at the bottom of that page to take us to: [SRA Run Selector PRJNA394726](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA394726&o=acc_s%3Aa)
+  3. I downloaded the **Metadata file**
 
 <p align="center">
  <img width="80%" alt="our full pipeline for RNA-seq" src="../../05_images/SRA_pic2.jp">
 </p>
 
-  * I opened this in excel using **File** -> **Import**
-  * I deleted columns I didn't need
-  * I added these columns. I compared the SRR numbers with the files I received and used `ls -1 *_1.fast` or `ls -1 *_2.fastq` to obtain the sequence files I have. 
-  * I saved as tab-delimited text. **File** -> **Save As...** -> **Tab-delimited text (.txt)
-  * I opened in a text editor and double checked there weren't any extra columns or lines
+  4. I opened this in excel using **File** -> **Import**
+  5. I deleted columns I didn't need
+  6. I added these columns. I compared the SRR numbers with the files I received and used `ls -1 _1.fast` or `ls -1 *_2.fastq` to obtain the sequence files I have. 
+  7. I saved as tab-delimited text. **File** -> **Save As...** -> **Tab-delimited text (.txt)
+  8. I opened in a text editor and double checked there weren't any extra columns or lines
 
 **Group Exercise** 
 
