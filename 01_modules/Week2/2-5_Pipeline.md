@@ -112,7 +112,7 @@ Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your
   3. I downloaded the **Metadata file**
 
 <p align="center">
- <img width="80%" alt="our full pipeline for RNA-seq" src="../../05_images/SRA_pic2.jp">
+ <img width="80%" alt="our full pipeline for RNA-seq" src="../../05_images/SRA_pic2.jpg">
 </p>
 
   4. I opened this in excel using **File** -> **Import**
