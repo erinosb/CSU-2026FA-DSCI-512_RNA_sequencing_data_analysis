@@ -38,7 +38,8 @@ $ cd /scratch/alpine/<eID@colostate.edu>/DSCI512/
   * ncbi-datasets-cli
   * hisat2
 
-  * Check that you have these installed:
+
+**Check that you have these installed:**
 
 ```bash
 conda list
@@ -85,7 +86,7 @@ $ pwd
 $ mkdir PROJ02_ce235IndexBuild
 ```
 
-:pencil2: Write it down!
+:pencil2: **Write it down!**
 
   * Write a readme.txt file within this directory
   * Write an entry in your Computational Lab Notebook
@@ -96,29 +97,25 @@ $ mkdir PROJ02_ce235IndexBuild
 - Search for `Caenorhabditis elegans`
 - Click on [**WBcel235**](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002985.6/)
   - Always look for that check mark! 
+- Write down the **NCBI RefSeq assembly #** or **Submitted GenBank assembly #**
+
+> [!NOTE]
+> You can choose between the RefSeq and GenBank versions. Both are going to be very similar. Here, we'll show you the RefSeq version. 
 
 **Let's download the genome!**
 
 > [!TIP]
 > Best practice is to always download your genome and annotation file (.gtf file) together so they are perfectly matched
 
-> [!NOTE]
-> You can choose between the RefSeq and GenBank versions. Both are going to be very similar. Here, we'll show you the RefSeq version. 
-
 ```bash
 datasets download genome accession GCF_000002985.6 --include genome,gtf
-unzip ncbi_dataset.zip
-```
-
-**Check sums**
-
-```bash
-md5sum -c *
+unzip ncbi_dataset.zip          # To unzip the folder
+md5sum -c *                     # To test if md5 sums match
 ```
 
 **Organizing and general housekeeeping**
 
-I like to move the .gtf file and .fna files out of their directory structure and put them directly into the directory `PROJ02_ce235IndexBuild`. This shortens their paths.
+I like to move the .gtf file and .fna files out of the subdirectories and directly into `PROJ02_ce235IndexBuild`. This shortens their paths.
 
 ```bash
 cd ncbi_dataset
@@ -130,7 +127,7 @@ cd ../../..
 ls
 ```
 
-It should now look like this:
+**It should now look like this**
 
 ```bash
 $ ls -1
@@ -152,10 +149,10 @@ mv genomic.gtf WBcel235_annotation_genomic.gtf
 
 **Data Exploration**
 
-  * Check out the files you have downloaded
+:mag_right: Check out the files you have downloaded!
 
 
-**Taking Notes:** Ok, now record what you did in your file YYMMDD_README_downloads.txt. You can use history. Make sure you include the download command and make mention that you checked the md5sums.
+:pencil2: **Taking Notes:** Ok, now record what you did in your file YYMMDD_README_downloads.txt. You can use history. Make sure you include the download command and make mention that you checked the md5sums.
 
 ----
 
