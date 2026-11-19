@@ -11,11 +11,14 @@
 
 ## Downloading the genome and building indexes
 
-Because our project involves the *C. elegans* genome, we will now download the *C. elegans* genome and build HISAT2 indexes using it. These are files that will make it possible to use the *C. elegans* genome as a reference genome in a HISAT2 alignment. This is a very common step in any NextGen sequencing alignment protocol.
+Because our project involves the *C. elegans* genome, we will now download the *C. elegans* genome and build **Hisat2 indexes** using it. **Hisat2 Indexes** are files that will make it possible to use the *C. elegans* genome as a reference genome in a Hisat2 alignment. This is a very common step in any NextGen sequencing alignment protocol.
 
-To build the HISAT2 indexes, we'll need two things:
+To build the Hisat2 indexes, we'll need two things:
 - The genome as fasta file
-- A name for our genome that we choose. (Since we're using *Caenorhabditis elegans*, version 235, we'll call it **ce235**)
+- A name for our genome that we choose
+
+> [!TIP]
+> Standardize your index build names. For this project, we will be making *C. elegans* version235 index build. So the abbreviation will be **ce235**.
 
 :hammer_and_wrench: **Group Exercise:** Build hisat2 indices 
 
@@ -42,9 +45,8 @@ hisat2
 hisat2-build
 ```
 
-
 <details> 
-<summary>click to expand instructions on software installation </summary>
+<summary>Click if you need help with software installation </summary>
 
 Check installed software with:
 
@@ -74,9 +76,6 @@ conda install -c bioconda hisat2
 </details>
 
 **Start a new project** entitled `PROJ02_ce235IndexBuild`
-
-> [!TIP]
-> Standardize your index build names. For this project, we will be making *C. elegans* version235 index build. So the abbreviation will be **ce235**.
 
 ```bash
 $ pwd 
@@ -223,7 +222,7 @@ $ more log_hisat2-build*   # read the output file created
 - If we look in the HISAT2 manual under the entry for **The hisat2-build indexer**, we'll find the proper usage for building genome indexes:
 
 <p align="center">
-<img width="700" alt="hisat2 build indexes" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/hisat2_buildIndexes.png">
+<img width="700" alt="hisat2 build indexes" src="../../05_images/hisat2_buildIndexes.png">
 </p>
 
 **Usage:** hisat2-build [options] <reference_in> <ht2_base>
@@ -387,6 +386,11 @@ Just to review. Here is what we did:
 2. Built the hisat2 indices from the *C. elegans* genome using hisat2-build.
 3. Checked the build
 4. Created a paths file to keep track of key paths for the hisat2 indexes, the genome file, and gtf files
+
+
+<p align="center">
+<img width="80%" alt="ourpipelinelong" src="../../05_images/our_pipeline_long.png">
+</p>
 
 Go ahead and update your readme file. Be sure to include:
 
