@@ -95,13 +95,15 @@ Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your
 
 # The Metadata File
 
-**The master list:** Think of the metadata file like a master list that describes each samples' conditions and names. It contains the most pertinent information for each of your samples. 
+**What is a metadata file?**
 
-**Reproducible Research:** This file is used to standardize different steps of the pipeline and to guard against errors. The key is to use and re-use the information in the `metadata` file to instruct a series of commands to loop over each field.
+  * A tab delimited file that lists each samples' names and conditions. 
+  * Think of it as the **master list**
+  * **Reproducible Research:** We will use and re-use the information in the `metadata` file in each step of the pipeline. 
+  * **Names:** A metadata file lists names that you will use for each sample in different steps of the data analysis process. Some of these names will be short (GO01, GO01), but some of them should have a little more information so they can be added to key plots and figures and show you which sample is which (02_Ecoli_15_2).
+  * **Conditions and Replicates** A metadata file keeps track of which condition and replicate # is associated with each sample. 
 
-**Names:** A metadata file also lists names that you will use for each sample in different steps of the data analysis process. Some of these names will be short (GO01, GO01), but some of them should have a little more information so they can be added to key plots and figures and show you which sample is which (02_Ecoli_15_2).
-
-Let's create a metadata file.
+**Let's create a metadata file**
 
 :hammer_and_wrench: **Group Exercise:**. Follow along. 
 
