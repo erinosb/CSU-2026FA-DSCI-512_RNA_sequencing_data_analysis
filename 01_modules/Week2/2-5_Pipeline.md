@@ -118,7 +118,7 @@ Our RNA-seq Analysis Pipeline is largely written in **bash**. You can write your
   4. I opened this in excel using **File** -> **Import**
   5. I deleted columns I didn't need
   6. I added these columns. I compared the SRR numbers with the files I received and used `ls -1 *_1.fast` or `ls -1 *_2.fastq` to obtain the sequence files I have. 
-  7. I saved as tab-delimited text. **File** -> **Save As...** -> **Tab-delimited text (.txt)
+  7. I saved as tab-delimited text. **File** -> **Save As...** -> **Tab-delimited text (.txt)**
   8. I opened in a text editor and double checked there weren't any extra columns or lines
 
 **Group Exercise** 
