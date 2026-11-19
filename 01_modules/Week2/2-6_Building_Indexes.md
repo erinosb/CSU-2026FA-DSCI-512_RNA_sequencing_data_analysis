@@ -246,7 +246,7 @@ However, it is good coding practice to pull the number of threads specified in t
 
 `hisat2-build -p ${SLURM_NTASKS}`
 
-You can use `ce235_wholegenome.fa` as the <reference_in> genome.
+You can use `GCF_000002985.6_WBcel235_genomic.fna` as the <reference_in> genome.
 
 Then, just add the last element: 
 
@@ -298,7 +298,7 @@ $ ls -alh
 - If your genome <is less than> 4 billion bp, you will always have 8 of these files
 - If you genome > 4 billion bp, you will have 16 files
 
-**Inspection output**
+**Inspection of output**
 
 ```
 projects/.colostate.edu/jesshill/software/anaconda/envs/2025dsci/bin/hisat2-inspect:24: DeprecationWarning: the imp module is deprecated in favour of importlib and slated 
@@ -332,18 +332,17 @@ $ touch paths.txt
 Open the paths file and write in it:
 
 ```bash
-# This directory contains the C. elegans hisat2 indices for ce235.
- 
 # The path and prefix of this hisat2 build
+
+# The absolute path for the genome
+
+# The absolute path for the .gtf file
 ```
 
-Next, figure out how to write the path and index in the following format:
+Next, write the path and index in the following format: `/path/to/this/directory/ce235`
 
-```bash
-/path/to/this/directory/ce235
-```
-
-Just use `ce235` (ce + 235). Don't add anything after it.
+> [!WARNING]
+> Just use `ce235` (ce + 235). Don't add anything after it. This will capture all the .ht2 files in the directory
 
 To figure out the path to write,
 
@@ -354,45 +353,45 @@ $ pwd
 Add this to your paths.txt file. It should look something like this...
 
 ```bash
-# This directory contains the C. elegans hisat2 indices for ce235.
-
-# The path and prefix of this hisat2 build 
+# The path and prefix of this hisat2 build
 /scratch/alpine/$USER/DSCI512/PROJ02_ce235IndexBuild/ce235
+
+# The absolute path for the genome
+
+# The absolute path for the .gtf file
 ```
 
-**Write the path to your whole genome fasta file**
+**Write the path to your whole genome fasta file and the .gtf file**
 
-It should look something like this...
+It should look something like this with `$USER` substituted as your username
 
-```
-# The path to the whole genome fasta file is:
+```bash
+# The path and prefix of this hisat2 build
+/scratch/alpine/$USER/DSCI512/PROJ02_ce235IndexBuild/ce235
+
+# The absolute path for the genome
 /scratch/alpine/$USER/DSCI512/PROJ02_ce235IndexBuild/GCF_000002985.6_WBcel235_genomic.fna
+
+# The absolute path for the .gtf file
+/scratch/alpine/$USER/DSCI512/PROJ02_ce235IndexBuild/WBcel235_annotation_genomic.gtf
+
 ```
 
 ---
-
-
 
 ## Review
 
 Just to review. Here is what we did:
 
-1. Downloaded the *C. elegans* genome from UCSC Genome Browser as individual chromosome fasta files and used checksums to test integrity.
+1. Downloaded the *C. elegans* genome and annotation files.
 2. Built the hisat2 indices from the *C. elegans* genome using hisat2-build.
-3. Checked the builds using
-4. Concatenated the chromosome files together into a ce235_wholegenome.fa file
-5. Obtained a .gtf annotation file.
-
-Started a paths.txt file that contains all the paths we need for future steps of the analysis process
+3. Checked the build
+4. Created a paths file to keep track of key paths for the hisat2 indexes, the genome file, and gtf files
 
 Go ahead and update your readme file. Be sure to include:
 
 - A summary of what you did (very brief)
 - Any URL locations you used for download
 - A mention of the paths.txt file
-
-Now we are ready to align our reads to the genome.
-
-Next, we'll return to Automation - focusing on editing our script files and running the whole pipeline.
 
 Continue on to [Overview of R](2-7_Overview_of_R.md)
