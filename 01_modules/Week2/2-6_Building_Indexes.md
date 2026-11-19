@@ -324,7 +324,7 @@ Num. Exons: 0
 
 ----
 
-# Write a paths file
+# Writing a paths file
 
 When we use this index, the one thing we'll need is the path and the prefix. To make it easy for me to find this information in the future, I like to save a file called `paths.txt` that contains this information.
 
