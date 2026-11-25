@@ -9,7 +9,7 @@
 ## RULES
 
 - NO Wheat! No hexaploid, tetraploid, or other complex genomes!
-- NO uncharacterized genomes!
+- NO unsequenced genomes!
 - Go for model systems if you can or at least organisms that have a .gtf file.
 - RNA-seq data must be paired-end!
 
@@ -17,7 +17,7 @@
 
 This exam will be a **project**. You will be asked to pick an RNA-seq dataset to analyze. This dataset can be either something **published** already in a paper. It can be something you **produced** yourself or that your lab has produced. If you don't have an idea for a project readily available, talk to your PI about it. If you are not associated with a lab and you aren't sure which dataset to use, please choose from the [Possible Projects](https://github.com/erinosb/CSU-2026FA-DSCI-512_RNA_sequencing_data_analysis/blob/main/02_assignments/Homework2.md#possible-projects).
 
-You will be asked to formulate a **biological question** that the RNA-seq dataset could address. It can be a question addressed in the originally published paper or it can be a new question.
+You will be asked to formulate a **biological question** that the RNA-seq dataset *could* address. It can be a question addressed in the originally published paper or it can be a new question. Note - you may not end up getting to the point where you answer the question, and that's ok. 
 
 - What are the transcriptional differences between wild type or mutant? What categories of genes might you expect to change most dramatically?
 - Which type of condition do you expect to have a dramatic effect on an organism (drug or mutant)?
