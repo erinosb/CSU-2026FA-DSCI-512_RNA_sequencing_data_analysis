@@ -80,9 +80,10 @@ Start an entry for each day you work on this homework. This can be a physical no
 - 12 files
 - 8 - 12 minutes download per file
 
-[Herranz, Vandenbrink, Villacampa, Manzano, Poehlman, Feltus, Kiss, and Medina. (2019) RNAseq Analysis of the Response of Arabidopsis thaliana to Fractional Gravity Under Blue-Light Stimulation During Spaceflight. Front Plant Sci. 2019 Nov 26;10:1529.](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01529/full)
-
+ [Maksiutenko EM, Barbitoff YA, Danilov LG, Matveenko AG, Zemlyanko OM, Efremova EP, Moskalenko SE, Zhouravleva GA. (2024) Gene Expression Analysis of Yeast Strains with a Nonsense Mutation in the eRF3-Coding Gene Highlights Possible Mechanisms of Adaptation. Int J Mol Sci. Jun 7;25(12):6308. doi: 10.3390/ijms25126308.](https://pubmed.ncbi.nlm.nih.gov/38928012/)
+ 
 - untested
+
 
 *Arabidopsis* 
 
