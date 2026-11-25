@@ -25,7 +25,7 @@ You will be asked to formulate a **biological question** that the RNA-seq datase
 
 Some of the tasks you will do started out as Homework and Reading Assignments.
 
-For the Final Project, you will customize and run the pipeline RNAseq_PE_array. Basically, you will hack the code to run on your dataset. **You will use .fastq files as input to produce tabulated counts as output on ALPINE.** You will then **download the tabulated count file from ALPINE and analyze it on your own computer using DESeq2 to produce a few plots.**
+For the Final Project, you will customize and run the pipeline RNAseq_PE_array. Basically, you will hack the code to run on your dataset. 
 
 **You will be asked to create some figures and figure legends pertaining to your analysis (Questions 2 - 4) and you will be asked to introduce (Question 1) and discuss (Question 5) your findings.**
 
