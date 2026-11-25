@@ -20,14 +20,14 @@ Your assignment: Download the genome of the organism you plan to work on. Build 
 - Select an organism you want to study. If you have already chosen an organism to work on for your final project, select that organism. If you do not yet have an organism selected for your final project, consider one of the projects/organisms suggested in [Homework2](Homework2.md).
 - Create a new directory in your ALPINE scratch space where you will download the genome and build new hisat2 indexes
 - Use the instructions in [Building Indexes](../01_modules/Week2/2-6_Building_Indexes.md) to guide you through how to download the genome.
-- Take notes on this process in your Computational Lab Notebook and in a readme document. Make sure to note how happy you are with the results. Do you think this worked? 
+- Take notes on this process in your Computational Lab Notebook and in a readme document. 
 
 ## Step 2: Build Hisat2 Indexes:
 
 - Using the genome you downloaded, build hisat2 indexes.
 - Use instructions in: [Building Indexes](../01_modules/Week2/2-6_Building_Indexes.md#building-indexes)
 - Write a `paths.txt` file
-- Take notes on this process in your Computational Lab Notebook and in a readme document.
+- Take notes on this process in your Computational Lab Notebook and in a readme document. Make sure to note how happy you are with the results. Do you think this worked? 
 
 ## Turn it in
 
